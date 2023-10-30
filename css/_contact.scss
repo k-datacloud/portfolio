@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@use 'functions' as functions;
+
+.contact-page {
+    width: 100%;
+
+    .contact-form {
+        width: 100%;
+        padding-top: 200px;
+        margin-bottom: 120px;
+
+        .contact-wrap {
+            width: 60%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 0 20px 0;
+            background-color: rgba($color: #B3E5FC, $alpha: 0.25);
+        }
+
+        &__title {
+            font-size: 35px;
+            @include functions.unjoined;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        &__text {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @include functions.notosans;
+        }
+
+        .wpcf7 {
+            width: 70%;
+            margin: 0 auto;
+
+            p {
+                margin-bottom: 40px
+            }
+
+            label {
+                @include functions.notosans;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #333333;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 100%;
+                background-color: #FFFFFF;
+                padding: 16px 10px;
+            }
+
+            input[ type=text] {
+                font-size: 16px;
+                letter-spacing: 1px;
+                @include functions.notosans;
+                color: #1A1919;
+                font-weight: 500;
+            }
+
+            input[ type=email] {
+                font-size: 16px;
+                letter-spacing: 1px;
+                @include functions.notosans;
+                color: #1A1919;
+                font-weight: 500;
+            }
+
+            textarea {
+                width: 100%;
+                background-color: #FFFFFF;
+                padding: 10px 8px;
+                @include functions.notosans;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .wpcf7-form-control-wrap {
+                display: block;
+                margin-top: 12px;
+            }
+
+            .wpcf7-not-valid-tip {
+                margin-top: 10px;
+                @include functions.notosans;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #FF3E0E;
+                font-weight: bold;
+            }
+
+            .wpcf7-submit {
+                @include functions.notosans;
+                display: block;
+                width: 300px;
+                margin: 0 auto;
+                background-color: #3d5ac0;
+                background-color: #1A1919;
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 1px;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                    transition: .3s;
+                    background-color: #1A1919;
+                }
+            }
+
+            .wpcf7-response-output {
+                border: none;
+                @include functions.notosans;
+                color: #FF3E0E;
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 1.6px;
+                text-align: center;
+            }
+
+            .button-mask {
+                filter: brightness(0.3);
+                transition: .5s ease-in-out;
+            }
+
+            .redtext {
+                @include functions.notosans;
+                font-size: 12px;
+                margin-left: 6px;
+                padding: 0 4px;
+                color: #FFFFFF;
+                font-weight: bold;
+                background-color: #FF3E0E;
+            }
+
+            .wpcf7-list-item-label {
+                font-weight: normal;
+                font-size: 14px;
+            }
+
+            .policy {
+                width: auto;
+                border: 1px solid #1A1919;
+                padding: 8px 8px 6px 8px;
+                cursor: pointer;
+                margin: 0 20px 0 0;
+
+            }
+        }
+
+    }
+}
