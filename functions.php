@@ -2,9 +2,9 @@
 function load_custom_scripts()
 {
     if (is_front_page()) {
-        wp_enqueue_script('top-scripts', get_template_directory_uri() . '/js/front.js', array(), null, true);
+        wp_enqueue_script('top-scripts', get_template_directory_uri() . '/js/front.js', array(), 1.0, true);
     } else {
-        wp_enqueue_script('other-scripts', get_template_directory_uri() . '/js/other.js', array(), null, true);
+        wp_enqueue_script('other-scripts', get_template_directory_uri() . '/js/other.js', array(), 1.0, true);
     }
 }
 add_action('wp_enqueue_scripts', 'load_custom_scripts');

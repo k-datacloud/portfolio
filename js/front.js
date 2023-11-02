@@ -1,4 +1,5 @@
-
+let uw = document.getElementById("service")
+console.log(uw);
 const text = "S.K PORTFOLIO";
 const TitleDummy = document.querySelector('.mainvisual__title--dummy');
 const splittext = text.split('');
