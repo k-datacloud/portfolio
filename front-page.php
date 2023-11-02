@@ -12,12 +12,10 @@
         <h2 class="mainvisual__title--dummy"></h2>
         <div class="mainvisual-inner">
             <h2 class="mainvisual__title">自分らしく、<br>&nbsp;&nbsp;&nbsp;今を生きる</h2>
-            <img class="mainvisual__img"
-                src="<?php echo get_template_directory_uri(); ?>/img/64d451fe6eae71b4f2431d27_Pacheco.svg" alt="">
+            <img class="mainvisual__img" src="<?php echo get_template_directory_uri(); ?>/img/64d451fe6eae71b4f2431d27_Pacheco.svg" alt="">
         </div>
         <div class="scroll-item">
-            <img class="mainvisual__subimg" src="<?php echo get_template_directory_uri(); ?>/img/mouse-svgrepo-com.svg"
-                alt="">
+            <img class="mainvisual__subimg" src="<?php echo get_template_directory_uri(); ?>/img/mouse-svgrepo-com.svg" alt="">
             <p class="mainvisual__text">scroll</p>
         </div>
     </section>
@@ -34,25 +32,20 @@
         <h2 class="service__title">SERVICE</h2>
         <div class="service-wrap">
             <div class="service-wrap__item">
-                <img class="service__img" src="<?php echo get_template_directory_uri(); ?>/img/code-svgrepo-com.svg"
-                    alt="">
+                <img class="service__img" src="<?php echo get_template_directory_uri(); ?>/img/code-svgrepo-com.svg" alt="">
                 <h3 class="service__name">Coding</h3>
                 <p class="service__text">
                     HTMLファイルでのコーディングやアニメーションのほかCMSの導入に対応いたします。コーディング作業ではレスポンシブデザイン、およびSEOに配慮した制作を提供いたします。</p>
             </div>
             <div class="service-wrap__item">
-                <img class="service__img"
-                    src="<?php echo get_template_directory_uri(); ?>/img/marketing-optimization-page-svgrepo-com.svg"
-                    alt="">
+                <img class="service__img" src="<?php echo get_template_directory_uri(); ?>/img/marketing-optimization-page-svgrepo-com.svg" alt="">
                 <h3 class="service__name">Web Creation</h3>
                 <p class="service__text">
                     ヒアリングを通じてデザインの制作から対応させていただきます。一般的なウェブサイト制作はもちろんShopifyを用いたECサイトの制作まで対応させていただきます。
                 </p>
             </div>
             <div class="service-wrap__item">
-                <img class="service__img"
-                    src="<?php echo get_template_directory_uri(); ?>/img/configuration-consumer-content-svgrepo-com.svg"
-                    alt="">
+                <img class="service__img" src="<?php echo get_template_directory_uri(); ?>/img/configuration-consumer-content-svgrepo-com.svg" alt="">
                 <h3 class="service__name">Management</h3>
                 <p class="service__text">制作後の運用としてアクセス解析やリニューアルなどウェブサイトの最適化を目指します。また、UXの向上提案やコンテンツ管理もサポートさせていただきます。</p>
             </div>
@@ -69,9 +62,7 @@
             </div>
             <div class="works-img">
                 <div class="works-img__mask"></div>
-                <img class="works-img__item"
-                    src="<?php echo get_template_directory_uri(); ?>/img/quaritsch-photography-bKOfm4KNt64-unsplash.jpg"
-                    alt="">
+                <img class="works-img__item" src="<?php echo get_template_directory_uri(); ?>/img/quaritsch-photography-bKOfm4KNt64-unsplash.jpg" alt="">
             </div>
         </div>
     </section>
