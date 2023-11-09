@@ -1,17 +1,7 @@
 <footer class="footer">
-    <div class="footer-wrap">
-        <div class="footer-container">
-            <h2 class="footer__title">S.K</h2>
-        </div>
-        <div class="contact">
-            <div class="contact-text">
-                <h2 class="contact__title">CONTACT</h2>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p class="copyright__text">©S.K</p>
-        <ul class="footer-list">
+    <div class="footer-inner">
+        <h2 class="footer__title"></h2>
+        <ul class="footer-list footer-menu">
             <li class="footer-list__item">
                 <a class="footer-list__link" href="#">ABOUT</a>
             </li>
@@ -23,6 +13,11 @@
             </li>
             <li class="footer-list__item">
                 <a class="footer-list__link" href="#">CONTACT</a>
+            </li>
+        </ul>
+        <ul class="footer-list footer-follow">
+            <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Github</a>
             </li>
             <li class="footer-list__item">
                 <a class="footer-list__link" href="#">PRIVACY POLICY</a>
