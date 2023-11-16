@@ -5,23 +5,32 @@
 body {
 
     .sub-works {
-        width: 100%;
-        padding-top: 200px;
+        width: calc(100% - 160px);
+        margin-left: auto;
         margin-bottom: 160px;
 
         .sub-works-inner {
-            width: 70%;
+            padding-top: 120px;
+            width: 80%;
             margin: 0 auto;
             max-width: 1000px;
         }
 
         &__title {
-            font-size: 35px;
+            font-size: 30px;
             @include functions.unjoined;
-            font-weight: 600;
-            letter-spacing: 5px;
-            margin-bottom: 80px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
             text-align: center;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: .1rem;
+            @include functions.notosans;
+            margin-bottom: 80px;
         }
 
         .sub-works-menu {
@@ -48,7 +57,7 @@ body {
 
             &__link {
                 display: block;
-                width: 48%;
+                width: 45%;
             }
         }
 

@@ -11,13 +11,7 @@
     <section class="sub-works">
         <div class="sub-works-inner">
             <h2 class="sub-works__title">WORKS</h2>
-            <ul class="sub-works-menu">
-                <li class="sub-works__item"><a class="sub-works__link" href="">All</a></li>
-                <li class="sub-works__item"><a class="sub-works__link" href="">Coding</a></li>
-                <li class="sub-works__item"><a class="sub-works__link" href="">Design&Coding</a></li>
-                <li class="sub-works__item"><a class="sub-works__link" href="">WordPress</a>
-                </li>
-            </ul>
+            <p class="sub-works__text">今まで制作したものをまとめています。詳しい説明やコードは個別ページからどうぞ。</p>
             <div class="works-wrap">
                 <?php $args = array(
                     'post_type' => 'works', // 既存の投稿タイプを指定
@@ -56,6 +50,8 @@
             </div>
         </div>
     </section>
+
+    <?php get_template_part('component/contact') ?>
 
 
     <?php get_template_part('component/footer-nav') ?>

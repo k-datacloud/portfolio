@@ -12,10 +12,22 @@
         <div class="post-page-inner">
             <div class="post-container"><?php the_content(); ?></div>
             <h2 class="post-page__title"><?php the_title(); ?></h2>
-            <div class="outline">
-                <h3 class="outline__title">Outline</h3>
-                <?php $outline = get_post_meta(get_the_ID(), 'Outline', true); ?>
-                <p class="outline__text"><?php echo $outline; ?></p>
+            <div class="detail">
+                <div class="detail-item">
+                    <h3 class="detail__title">Outline</h3>
+                    <?php $outline = get_post_meta(get_the_ID(), 'Outline', true); ?>
+                    <p class="detail__text"><?php echo $outline; ?></p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail__title">URL</h3>
+                    <?php $URL = get_post_meta(get_the_ID(), 'URL', true); ?>
+                    <p class="detail__text"><?php echo $URL; ?></p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail__title">Github</h3>
+                    <?php $Github = get_post_meta(get_the_ID(), 'Github', true); ?>
+                    <p class="detail__text"><?php echo $Github; ?></p>
+                </div>
             </div>
             <p class="post-page__text"><a class="post-page__link" href="<?php echo get_post_type_archive_link('works'); ?>">実績一覧に戻る</a></p>
         </div>

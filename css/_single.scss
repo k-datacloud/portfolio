@@ -3,12 +3,13 @@
 @use 'functions' as functions;
 
 .post-page {
-    width: 100%;
-    padding-top: 200px;
+    width: calc(100% - 160px);
+    padding-top: 160px;
+    margin-left: auto;
     margin-bottom: 120px;
 
     .post-page-inner {
-        width: 60%;
+        width: 70%;
         max-width: 900px;
         margin: 0 auto;
     }
@@ -26,24 +27,33 @@
         margin-bottom: 80px;
     }
 
-    .outline {
-        display: flex;
-        justify-content: space-between;
+    .detail {
         margin-bottom: 120px;
+
+        .detail-item {
+            display: flex;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0
+            }
+        }
 
         &__title {
             @include functions.unjoined;
-            font-size: 20px;
+            font-size: 2rem;
             letter-spacing: 1px;
             font-weight: 500;
-            margin-right: 40px;
+            flex: 1;
         }
 
         &__text {
+            flex: 5;
+            text-align: start;
             @include functions.notosans;
-            font-size: 16px;
+            font-size: 1.6rem;
             letter-spacing: 1px;
-            line-height: 1.5;
+            line-height: 1.6;
             text-align: justify;
         }
     }
@@ -55,8 +65,30 @@
     &__link {
         @include functions.notosans;
         color: #1A1919;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 1.8px;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            margin: 4px auto 0 auto;
+            width: 15%;
+            height: 1.5px;
+            background-color: #1A1919;
+            // position: absolute;
+            // top: 40px;
+            opacity: 0;
+            transform: scaleX(0);
+            transform-origin: left top;
+            transition: .3s ease-in-out;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scaleX(1);
+            transition: .3s ease-in-out;
+        }
     }
 
 }

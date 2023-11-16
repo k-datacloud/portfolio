@@ -12,11 +12,14 @@
     <section class="sub-about">
         <div class="sub-about-inner">
             <div class="profile">
-                <h2 class="sub-about__title">ABOUT</h2>
+                <h2 class="sub-about__title">ABOUT
+                    <span class="sub-about__title--small">私について</span>
+                </h2>
                 <div class="about-wrap">
                     <h3 class="profile__name">定時海聖 <span class="profile__name--en">Sadatoki Kaisei</span></h3>
                     <p class="profile__text">
-                        2002年生まれの20才で兵庫県在住。ブログでプログラミングの勉強を発信していた大学生に感化され2022年の12月から勉強を開始。現在はアプリケーション開発やマーケティングについて勉強中。"自分らしく今を楽しく生きる"がモットー。
+                        2002年生まれの20才で兵庫県在住。ブログでプログラミングの勉強を発信していた大学生に感化され2022年の12月から独学で勉強を開始。現在はflutterやPythonでのアプリケーション開発やマーケティングについて勉強中。"自分らしく今を楽しく生きる"がモットーです。
+                        主にフロントエンドの言語を用いたコーディングやサイトの制作、運用などに対応致します。今後はPythonを用いたスクレイピングやマーケティング業務の他、アプリ開発なども携わりたいと思っております。もし興味がある方はお問い合わせフォームまでよろしくお願いいたします。
                     </p>
                 </div>
             </div>

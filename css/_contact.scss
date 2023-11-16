@@ -6,12 +6,13 @@
     width: 100%;
 
     .contact-form {
-        width: 100%;
+        width: calc(100% - 160px);
+        margin-left: auto;
         padding-top: 200px;
         margin-bottom: 120px;
 
         .contact-wrap {
-            width: 60%;
+            width: 80%;
             max-width: 900px;
             margin: 0 auto;
             padding: 60px 0 20px 0;
@@ -21,7 +22,7 @@
         &__title {
             font-size: 35px;
             @include functions.unjoined;
-            font-weight: 600;
+            font-weight: 500;
             letter-spacing: 5px;
             margin-bottom: 40px;
             text-align: center;

@@ -7,10 +7,8 @@ html {
 }
 
 .about-page {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
-    background-color: rgba($color: #F3F2EE, $alpha: 1);
 
     &::after {
         content: "";
@@ -60,30 +58,37 @@ html {
     }
 
     .sub-about {
-        padding-top: 80px;
-        width: 100%;
-        height: 100%;
-        position: relative;
+        width: calc(100% - 160px);
+        margin-left: auto;
 
         .sub-about-inner {
-            width: 60%;
-            max-width: 900px;
+            width: 75%;
             margin: 0 auto;
+            padding-top: 80px;
         }
 
         &__title {
             font-family: 'Noto Sans NKo Unjoined', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 35px;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             color: #333333;
             margin-bottom: 60px;
             text-align: center;
+
+            &--small {
+                @include functions.notosans;
+                display: block;
+                font-size: 1.4rem;
+                letter-spacing: .1rem;
+                text-align: center;
+                margin-top: 12px;
+            }
         }
 
         .profile {
             width: 100%;
-            margin: 100px auto 60px auto;
+            margin: 0 auto 60px auto;
 
             &__name {
                 @include functions.notosans;
@@ -103,11 +108,13 @@ html {
             }
 
             &__text {
-                width: 50%;
+                width: 100%;
                 @include functions.notosans;
                 color: #1A1919;
                 line-height: 2;
-                font-size: 15px;
+                columns: 2;
+                column-gap: 60px;
+                font-size: 1.4rem;
                 letter-spacing: 1.2px;
                 text-align: justify;
             }

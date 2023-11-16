@@ -8,3 +8,20 @@
 @mixin unjoined {
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
 }
+
+$breakpoints: (
+    "sp": 480px,
+    "tb": 1024px,
+);
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media (max-width: $breakpoint-value) {
+            @content;
+        }
+    }
+}
+
+;

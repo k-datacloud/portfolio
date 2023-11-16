@@ -10,12 +10,12 @@
 
 <nav class="grnav">
     <ul class="header-list">
-        <li class="header-list__item"><a class="header-list__link " href="<?php echo get_page_link(7); ?>">ABOUT</a>
+        <li class="header-list__item"><a class="header-list__link " href="<?php echo esc_url(get_page_link(7)); ?>">ABOUT</a>
         </li>
-        <li class="header-list__item"><a class="header-list__link push" href="#service">SERVICE</a>
+        <li class="header-list__item"><a class="header-list__link push" href="<?php echo esc_url(get_page_link(7)); ?>">SERVICE</a>
         </li>
-        <li class="header-list__item"><a class="header-list__link" href="<?php echo get_post_type_archive_link('works'); ?>">WORKS</a></li>
-        <li class="header-list__item"><a class="header-list__link" href="<?php echo get_page_link(9); ?>">CONTACT</a>
+        <li class="header-list__item"><a class="header-list__link" href="<?php echo esc_url(get_post_type_archive_link('works'))  ?>">WORKS</a></li>
+        <li class="header-list__item"><a class="header-list__link" href="<?php echo esc_url(get_page_link(9))  ?>">CONTACT</a>
         </li>
     </ul>
 </nav>
