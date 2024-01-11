@@ -4,28 +4,121 @@
 
 .contact-page {
     width: 100%;
+    font-family: 'Raleway', sans-serif;
+
+    &::after {
+        content: "";
+        position: fixed;
+        /*固定表示*/
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 900;
+        /*他のスタッキングコンテキストとかち合った時用*/
+        background-color: rgba($color: #1A1919, $alpha: 1);
+        /*シャッターの色*/
+        animation: min-anim 3s forwards;
+        /*アニメーション付与*/
+        transform-origin: left;
+        /*変化の起点*/
+    }
+
+    /*背景が縮むアニメーション*/
+    @keyframes min-anim {
+        0% {
+            transform: scaleX(1);
+            /*画面全体を覆う*/
+        }
+
+        20% {
+            transform: scaleX(1);
+        }
+
+        50% {
+            transform: scaleX(1);
+        }
+
+        80% {
+            transform: scaleX(1);
+        }
+
+        100% {
+            transform-origin: right;
+            transform: scaleX(0);
+            /*高さ0*/
+            visibility: hidden;
+            /*非表示*/
+
+        }
+    }
+
+    .open-anime {
+        animation: open-anim 2.5s forwards;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        @include functions.notosans;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.8px;
+
+        @include functions.respond-to(tb) {
+            font-size: 24px;
+        }
+
+        @keyframes open-anim {
+            0% {
+                visibility: visible;
+            }
+
+            90% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+    }
 
     .contact-form {
-        width: calc(100% - 160px);
-        margin-left: auto;
+        width: 100%;
         padding-top: 200px;
         margin-bottom: 120px;
+
+        @include functions.respond-to(tb) {
+            width: 100%;
+            margin-left: 0;
+        }
 
         .contact-wrap {
             width: 80%;
             max-width: 900px;
             margin: 0 auto;
             padding: 60px 0 20px 0;
-            background-color: rgba($color: #B3E5FC, $alpha: 0.25);
+
+            @include functions.respond-to(sp) {
+                width: 90%;
+                padding: 40px 0 10px 0;
+            }
         }
 
         &__title {
-            font-size: 35px;
+            font-size: 30px;
             @include functions.unjoined;
             font-weight: 500;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             margin-bottom: 40px;
             text-align: center;
+
+            @include functions.respond-to(sp) {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
         }
 
         &__text {
@@ -42,8 +135,16 @@
             width: 70%;
             margin: 0 auto;
 
+            @include functions.respond-to(sp) {
+                width: 90%;
+            }
+
             p {
-                margin-bottom: 40px
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             label {
@@ -53,12 +154,17 @@
                 color: #333333;
                 font-weight: 600;
                 margin-bottom: 20px;
+
+                @include functions.respond-to(sp) {
+                    font-size: 14px;
+                }
             }
 
             input {
                 width: 100%;
-                background-color: #FFFFFF;
-                padding: 16px 10px;
+                background-color: #F5F5F5;
+                padding: 16px 20px;
+                box-sizing: border-box;
             }
 
             input[ type=text] {
@@ -67,6 +173,10 @@
                 @include functions.notosans;
                 color: #1A1919;
                 font-weight: 500;
+
+                @include functions.respond-to(sp) {
+                    font-size: 14px;
+                }
             }
 
             input[ type=email] {
@@ -75,15 +185,24 @@
                 @include functions.notosans;
                 color: #1A1919;
                 font-weight: 500;
+
+                @include functions.respond-to(sp) {
+                    font-size: 14px;
+                }
             }
 
             textarea {
                 width: 100%;
-                background-color: #FFFFFF;
-                padding: 10px 8px;
+                background-color: #F5F5F5;
+                padding: 16px 20px;
                 @include functions.notosans;
                 font-size: 16px;
                 letter-spacing: 1px;
+                box-sizing: border-box;
+
+                @include functions.respond-to(sp) {
+                    font-size: 14px;
+                }
             }
 
             .wpcf7-form-control-wrap {
@@ -98,6 +217,10 @@
                 letter-spacing: 1px;
                 color: #FF3E0E;
                 font-weight: bold;
+
+                @include functions.respond-to(sp) {
+                    font-size: 10px;
+                }
             }
 
             .wpcf7-submit {
@@ -112,6 +235,11 @@
                 font-size: 16px;
                 letter-spacing: 1px;
                 transition: .3s;
+
+                @include functions.respond-to(sp) {
+                    font-size: 14px;
+                    width: 270px;
+                }
 
                 &:hover {
                     cursor: pointer;
@@ -140,9 +268,8 @@
                 font-size: 12px;
                 margin-left: 6px;
                 padding: 0 4px;
-                color: #FFFFFF;
-                font-weight: bold;
-                background-color: #FF3E0E;
+                color: #FF3E0E;
+                font-weight: normal;
             }
 
             .wpcf7-list-item-label {

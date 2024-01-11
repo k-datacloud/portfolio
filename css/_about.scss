@@ -8,7 +8,14 @@ html {
 
 .about-page {
     height: 100vh;
-    overflow: hidden;
+    background-color: #FFF3CD;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+
+    @include functions.respond-to(tb) {
+        overflow: auto;
+        height: auto;
+    }
 
     &::after {
         content: "";
@@ -18,11 +25,11 @@ html {
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 999;
+        z-index: 900;
         /*他のスタッキングコンテキストとかち合った時用*/
-        background-color: rgba($color: #FFFFFF, $alpha: 1);
+        background-color: rgba($color: #1A1919, $alpha: 1);
         /*シャッターの色*/
-        animation: min-anim 1.5s forwards;
+        animation: min-anim 3s forwards;
         /*アニメーション付与*/
         transform-origin: left;
         /*変化の起点*/
@@ -57,53 +64,83 @@ html {
         }
     }
 
+    .open-anime {
+        animation: open-anim 2.5s forwards;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        @include functions.notosans;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.8px;
+
+        @include functions.respond-to(tb) {
+            font-size: 24px;
+        }
+
+        @keyframes open-anim {
+            0% {
+                visibility: visible;
+            }
+
+            90% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+    }
+
     .sub-about {
-        width: calc(100% - 160px);
-        margin-left: auto;
+        width: 100%;
+        padding:  200px 0 40px 0;
+        background-color: #FFF3CD;
 
         .sub-about-inner {
             width: 75%;
             margin: 0 auto;
-            padding-top: 80px;
+
+            @include functions.respond-to(sp) {
+                width: 90%;
+            }
         }
 
         &__title {
-            font-family: 'Noto Sans NKo Unjoined', sans-serif;
-            font-weight: 500;
-            font-size: 35px;
-            letter-spacing: 3px;
-            color: #333333;
-            margin-bottom: 60px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 20px;
+            letter-spacing: 0px;
+            margin-bottom: 40px;
             text-align: center;
+            font-weight: bold;
 
-            &--small {
-                @include functions.notosans;
-                display: block;
-                font-size: 1.4rem;
-                letter-spacing: .1rem;
-                text-align: center;
-                margin-top: 12px;
+            @include functions.respond-to(sp) {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
             }
         }
 
         .profile {
             width: 100%;
-            margin: 0 auto 60px auto;
+            margin: 0 auto 100px auto;
 
-            &__name {
+            @include functions.respond-to(sp) {
+                margin-bottom: 60px;
+            }
+
+            &__title {
                 @include functions.notosans;
                 font-size: 20px;
                 font-weight: bold;
-                letter-spacing: 2px;
                 color: #1A1919;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
 
-                &--en {
-                    @include functions.unjoined;
-                    font-size: 15px;
-                    letter-spacing: 1px;
-                    font-weight: 500;
-                    color: #1A1919;
+                @include functions.respond-to(sp) {
+                    font-size: 16px;
                 }
             }
 
@@ -112,17 +149,29 @@ html {
                 @include functions.notosans;
                 color: #1A1919;
                 line-height: 2;
-                columns: 2;
-                column-gap: 60px;
-                font-size: 1.4rem;
-                letter-spacing: 1.2px;
+                font-size: 1.6rem;
                 text-align: justify;
+                margin-bottom: 40px;
+                word-spacing: normal;
+
+                @include functions.respond-to(sp) {
+                    columns: 1;
+                    font-size: 1.2rem;
+                    line-height: 2;
+                }
             }
         }
 
         .skills {
             width: 100%;
             margin: 0 auto 80px auto;
+
+            &__item {
+                
+                @include functions.respond-to(sp) {
+                    width: 30%;
+                }
+            }
 
             &__img {
                 width: 80px;
@@ -132,6 +181,12 @@ html {
                     animation: waitAnimate_659845543 4s linear infinite;
                     transform-origin: 50% 50%;
                     perspective: 120px;
+
+                    @include functions.respond-to(sp) {
+                        width: 70px;
+                        display: block;
+                        margin:  0 auto;
+                    }
 
 
                     @keyframes waitAnimate_659845543 {
@@ -167,6 +222,12 @@ html {
                     width: 80px;
                     position: relative;
                     animation: floatAndBack 5s ease-in-out infinite;
+
+                    @include functions.respond-to(sp) {
+                        width: 70px;
+                        display: block;
+                        margin: 0 auto;
+                    }
 
                     @keyframes floatAndBack {
 
@@ -204,7 +265,13 @@ html {
 
         .skills-menu {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+
+
+            @include functions.respond-to(sp) {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
         }
 
         &__btn {
@@ -226,6 +293,10 @@ html {
             position: absolute;
             bottom: 10px;
             right: 30px;
+
+            @include functions.respond-to(sp) {
+                display: none;
+            }
         }
     }
 

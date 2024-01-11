@@ -5,7 +5,7 @@
     <?php get_header(); ?>
 </head>
 
-<body>
+<body class="body">
     <?php get_template_part('component/header-nav'); ?>
 
     <section class="post-page">
@@ -29,7 +29,8 @@
                     <p class="detail__text"><?php echo $Github; ?></p>
                 </div>
             </div>
-            <p class="post-page__text"><a class="post-page__link" href="<?php echo get_post_type_archive_link('works'); ?>">実績一覧に戻る</a></p>
+            <p class="post-page__text"><a class="post-page__link"
+                    href="<?php echo get_post_type_archive_link('works'); ?>">実績一覧に戻る</a></p>
         </div>
     </section>
 
@@ -38,7 +39,8 @@
 
     <?php get_template_part('component/footer-nav') ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+
     <?php get_footer(); ?>
 
 </body>

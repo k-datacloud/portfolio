@@ -3,15 +3,27 @@
 @use 'functions' as functions;
 
 .post-page {
-    width: calc(100% - 160px);
-    padding-top: 160px;
-    margin-left: auto;
+    width: 100%;
+    padding-top: 200px;
     margin-bottom: 120px;
+
+    @include functions.respond-to(tb) {
+        width: 100%;
+        margin-left: 0;
+
+        @include functions.respond-to(sp) {
+            margin-bottom: 80px;
+        }
+    }
 
     .post-page-inner {
         width: 70%;
         max-width: 900px;
         margin: 0 auto;
+
+        @include functions.respond-to(tb) {
+            width: 90%;
+        }
     }
 
     .post-container {
@@ -25,14 +37,29 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 80px;
+
+        @include functions.respond-to(tb) {
+            font-size: 20px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
     }
 
     .detail {
         margin-bottom: 120px;
 
+        @include functions.respond-to(sp) {
+            margin-bottom: 80px;
+        }
+
         .detail-item {
             display: flex;
             margin-bottom: 40px;
+
+            @include functions.respond-to(sp) {
+                margin-bottom: 20px;
+                flex-direction: column;
+            }
 
             &:last-child {
                 margin-bottom: 0
@@ -45,6 +72,11 @@
             letter-spacing: 1px;
             font-weight: 500;
             flex: 1;
+
+            @include functions.respond-to(sp) {
+                font-size: 1.6rem;
+                margin-bottom: 8px;
+            }
         }
 
         &__text {
@@ -55,6 +87,10 @@
             letter-spacing: 1px;
             line-height: 1.6;
             text-align: justify;
+
+            @include functions.respond-to(sp) {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -68,6 +104,11 @@
         font-size: 16px;
         letter-spacing: 1.8px;
         position: relative;
+
+        @include functions.respond-to(sp) {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
 
         &:after {
             content: "";
