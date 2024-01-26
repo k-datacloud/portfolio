@@ -11,9 +11,10 @@
 
     <div class="mv">
         <div class="mv-inner">
-            <h2 class="mv-title">
-                <div class="mv-title__profile"></div>
-            </h2>
+            <div class="mv-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/florian_krumm_1osIUArK5oA_unsplash_gray.jpg"
+                    alt="メインビジュアル">
+            </div>
             <ul class="mv-list">
                 <li class="mv-item"><a class="mv-link" target="_blank"
                         href="https://www.linkedin.com/in/s-kaisei/">Linkedin</a></li>

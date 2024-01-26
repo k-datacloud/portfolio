@@ -13,7 +13,8 @@
     <section class="contact-form">
         <div class="contact-wrap">
             <h2 class="contact-form__title">CONTACT</h2>
-            <p class="contact-form__text"></p>
+            <p class="contact-form__text">
+                お仕事のご相談やご依頼等はお気軽にお問い合わせください。<br>その他こんなことを一緒にやってみたい！などの提案やポートフォリオのダメ出しなど何でもお待ちしております。</p>
             <?php echo do_shortcode('[contact-form-7 id="29b6eed" title="お問い合わせ"]'); ?>
         </div>
     </section>

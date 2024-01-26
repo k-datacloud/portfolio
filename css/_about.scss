@@ -8,7 +8,7 @@ html {
 
 .about-page {
     height: 100vh;
-    background-color: #FFF3CD;
+    background-color: #F6F6F6;
     position: relative;
     font-family: 'Raleway', sans-serif;
 
@@ -99,7 +99,6 @@ html {
     .sub-about {
         width: 100%;
         padding:  200px 0 40px 0;
-        background-color: #FFF3CD;
 
         .sub-about-inner {
             width: 75%;
@@ -112,11 +111,12 @@ html {
 
         &__title {
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 20px;
-            letter-spacing: 0px;
+            font-size: 40px;
+            letter-spacing: 1px;
             margin-bottom: 40px;
             text-align: center;
             font-weight: bold;
+            color: #333333;
 
             @include functions.respond-to(sp) {
                 font-size: 1.6rem;

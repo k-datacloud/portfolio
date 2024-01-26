@@ -20,13 +20,8 @@
                         My name is Sadatoki Kaisei. I was born in 2002 and live in Hyogo prefecture in Japan. I have
                         experienced many things since
                         graduating from high school. My motto is "to live happily in the
-                        moment".
-                    </p>
-                    <p class="profile__text--ja"></p>
-                    <h3 class="profile__title">Information</h3>
-                    <p class="profile__text">
-                        Inspired by a college student who was transmitting his programming studies on his blog, I
-                        began to study on my own. I believe that my self-study has given me the ability to run and
+                        moment". Inspired by a college student who was transmitting his programming studies on his blog,
+                        I began to study on my own. I believe that my self-study has given me the ability to run and
                         research on my own. I am currently studying app development. In the future, I
                         would like to hone my skills as an engineer and create my own business. Although it is a big
                         hope, I am also interested in living and working abroad.
@@ -35,17 +30,17 @@
             </div>
             <div class="skills">
                 <h2 class="sub-about__title">Experienced in development</h2>
+                <h3 class="skills__title">HTML</h3>
+                <p class="skills__text"></p>
+                <h3 class="skills__title">WordPress</h3>
+                <h3 class="skills__title">JavaScript</h3>
+                <h3 class="skills__title">Python</h3>
                 <ul class="skills-menu">
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt=""></li>
-                    <li class="skills__item"><img class="skills__img--float"
-                            src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt=""></li>
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt=""></li>
-                    <li class="skills__item"><img class="skills__img--float"
-                            src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt=""></li>
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt=""></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt=""></li>
+                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt=""></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt=""></li>
+                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt=""></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt=""></li>
                 </ul>
             </div>
         </div>

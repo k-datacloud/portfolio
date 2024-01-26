@@ -9,7 +9,7 @@ html {
   height: 100%;
   font-family: "Raleway", sans-serif;
   overflow: hidden;
-  background-color: #FFF3CD;
+  background-color: #F6F6F6;
 }
 @media (max-width: 1024px) {
   .frontbody {
@@ -18,7 +18,7 @@ html {
 }
 .frontbody .mv {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 180px;
   height: 100vh;
 }
 .frontbody .mv .mv-inner {
@@ -26,6 +26,21 @@ html {
   margin: 0 auto;
   height: 100%;
   position: relative;
+}
+.frontbody .mv .mv-img {
+  width: 80%;
+  height: 75%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .frontbody .mv .mv-img {
+    width: 100%;
+    height: 70%;
+  }
+}
+.frontbody .mv .mv-img img {
+  width: 100%;
+  height: 100%;
 }
 .frontbody .mv .mv-list {
   position: absolute;
@@ -79,10 +94,15 @@ html {
   z-index: 999;
 }
 .header .header-inner {
-  width: 90%;
+  padding: 0 80px 0 60px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header .header-inner {
+    padding: 0 20px;
+  }
 }
 .header__title--logo {
   font-size: 1.8rem;
@@ -239,7 +259,7 @@ html {
 .contact__title {
   font-family: "Noto Sans NKo Unjoined", sans-serif;
   font-size: 70px;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   font-weight: 500;
   color: #1A1919;
   padding: 160px 0 160px 120px;
@@ -365,7 +385,7 @@ html {
   font-weight: 500;
   letter-spacing: 0.1rem;
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   position: relative;
 }
 @media (max-width: 1024px) {
@@ -408,7 +428,7 @@ html {
 
 .about-page {
   height: 100vh;
-  background-color: #FFF3CD;
+  background-color: #F6F6F6;
   position: relative;
   font-family: "Raleway", sans-serif;
   /*背景が縮むアニメーション*/
@@ -491,7 +511,6 @@ html {
 .about-page .sub-about {
   width: 100%;
   padding: 200px 0 40px 0;
-  background-color: #FFF3CD;
 }
 .about-page .sub-about .sub-about-inner {
   width: 75%;
@@ -504,11 +523,12 @@ html {
 }
 .about-page .sub-about__title {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 20px;
-  letter-spacing: 0px;
+  font-size: 40px;
+  letter-spacing: 1px;
   margin-bottom: 40px;
   text-align: center;
   font-weight: bold;
+  color: #333333;
 }
 @media (max-width: 768px) {
   .about-page .sub-about__title {
