@@ -7,10 +7,10 @@ html {
 }
 
 .about-page {
-    height: 100vh;
-    background-color: #F6F6F6;
+    background-color: #FFFFFF;
     position: relative;
     font-family: 'Raleway', sans-serif;
+    height: 100vh;
 
     @include functions.respond-to(tb) {
         overflow: auto;
@@ -99,6 +99,7 @@ html {
     .sub-about {
         width: 100%;
         padding:  200px 0 40px 0;
+        position: relative;
 
         .sub-about-inner {
             width: 75%;
@@ -106,21 +107,6 @@ html {
 
             @include functions.respond-to(sp) {
                 width: 90%;
-            }
-        }
-
-        &__title {
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 40px;
-            letter-spacing: 1px;
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: bold;
-            color: #333333;
-
-            @include functions.respond-to(sp) {
-                font-size: 1.6rem;
-                margin-bottom: 20px;
             }
         }
 
@@ -134,30 +120,42 @@ html {
 
             &__title {
                 @include functions.notosans;
-                font-size: 20px;
-                font-weight: bold;
-                color: #1A1919;
-                margin-bottom: 20px;
+                font-size: 40px;
+                font-weight: normal;
+                color: #333333;
+                margin-bottom: 30px;
 
                 @include functions.respond-to(sp) {
-                    font-size: 16px;
+                    font-size: 24px;
                 }
             }
 
             &__text {
                 width: 100%;
                 @include functions.notosans;
-                color: #1A1919;
+                color: #333333;
                 line-height: 2;
                 font-size: 1.6rem;
                 text-align: justify;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 word-spacing: normal;
 
-                @include functions.respond-to(sp) {
-                    columns: 1;
-                    font-size: 1.2rem;
+                &--ja {
+                    @include functions.notosans;
+                    color: #333333;
                     line-height: 2;
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    letter-spacing: 1px;
+
+                    @include functions.respond-to(sp) {
+                        font-size: 1.2rem;
+                        line-height: 2;
+                    }
+                }
+
+                @include functions.respond-to(sp) {
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -170,6 +168,41 @@ html {
                 
                 @include functions.respond-to(sp) {
                     width: 30%;
+                }
+            }
+
+            .skills-title {
+                font-weight: normal;
+                font-size: 40px;
+                color: #333333;
+                margin-bottom: 40px;
+
+                @include functions.respond-to(sp) {
+                    font-size: 24px;
+                }
+            }
+
+            &__title {
+                font-size: 32px;
+                color: #333333;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+                font-weight: normal;
+
+                @include functions.respond-to(sp) {
+                    font-size: 20px;
+                }
+            }
+
+            &__text {
+                font-size: 1.6rem;
+                color: #333333;
+                line-height: 2;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+
+                @include functions.respond-to(sp) {
+                    font-size: 1.2rem;
                 }
             }
 
@@ -272,20 +305,6 @@ html {
                 flex-wrap: wrap;
                 gap: 12px;
             }
-        }
-
-        &__btn {
-            display: block;
-            margin: 0 auto;
-            width: 270px;
-            background-color: #CD162C;
-            @include functions.notosans;
-            color: #FFFFFF;
-            font-size: 16px;
-            letter-spacing: 1.5px;
-            font-weight: bold;
-            padding: 20px 0;
-            text-align: center;
         }
 
         &__img {

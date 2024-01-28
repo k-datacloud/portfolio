@@ -427,10 +427,10 @@ html {
 }
 
 .about-page {
-  height: 100vh;
-  background-color: #F6F6F6;
+  background-color: #FFFFFF;
   position: relative;
   font-family: "Raleway", sans-serif;
+  height: 100vh;
   /*背景が縮むアニメーション*/
 }
 @media (max-width: 1024px) {
@@ -511,6 +511,7 @@ html {
 .about-page .sub-about {
   width: 100%;
   padding: 200px 0 40px 0;
+  position: relative;
 }
 .about-page .sub-about .sub-about-inner {
   width: 75%;
@@ -519,21 +520,6 @@ html {
 @media (max-width: 768px) {
   .about-page .sub-about .sub-about-inner {
     width: 90%;
-  }
-}
-.about-page .sub-about__title {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 40px;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: bold;
-  color: #333333;
-}
-@media (max-width: 768px) {
-  .about-page .sub-about__title {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
   }
 }
 .about-page .sub-about .profile {
@@ -548,33 +534,45 @@ html {
 .about-page .sub-about .profile__title {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  font-weight: bold;
-  color: #1A1919;
-  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .about-page .sub-about .profile__title {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 .about-page .sub-about .profile__text {
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  color: #1A1919;
+  color: #333333;
   line-height: 2;
   font-size: 1.6rem;
   text-align: justify;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   word-spacing: normal;
+}
+.about-page .sub-about .profile__text--ja {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2;
+  font-size: 1.6rem;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .about-page .sub-about .profile__text--ja {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
 }
 @media (max-width: 768px) {
   .about-page .sub-about .profile__text {
-    -moz-columns: 1;
-         columns: 1;
     font-size: 1.2rem;
-    line-height: 2;
   }
 }
 .about-page .sub-about .skills {
@@ -584,6 +582,41 @@ html {
 @media (max-width: 768px) {
   .about-page .sub-about .skills__item {
     width: 30%;
+  }
+}
+.about-page .sub-about .skills .skills-title {
+  font-weight: normal;
+  font-size: 40px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .about-page .sub-about .skills .skills-title {
+    font-size: 24px;
+  }
+}
+.about-page .sub-about .skills__title {
+  font-size: 32px;
+  color: #333333;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+  .about-page .sub-about .skills__title {
+    font-size: 20px;
+  }
+}
+.about-page .sub-about .skills__text {
+  font-size: 1.6rem;
+  color: #333333;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .about-page .sub-about .skills__text {
+    font-size: 1.2rem;
   }
 }
 .about-page .sub-about .skills__img {
@@ -669,20 +702,6 @@ html {
     flex-wrap: wrap;
     gap: 12px;
   }
-}
-.about-page .sub-about__btn {
-  display: block;
-  margin: 0 auto;
-  width: 270px;
-  background-color: #CD162C;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  color: #FFFFFF;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-  padding: 20px 0;
-  text-align: center;
 }
 .about-page .sub-about__img {
   width: 240px;
@@ -791,10 +810,10 @@ html {
   }
 }
 .works .sub-works__title {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Noto Sans NKo Unjoined", sans-serif;
-  font-weight: 500;
-  letter-spacing: 4px;
+  font-weight: normal;
+  letter-spacing: 3px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -926,9 +945,9 @@ html {
   }
 }
 .contact-page .contact-form__title {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Noto Sans NKo Unjoined", sans-serif;
-  font-weight: 500;
+  font-weight: normal;
   letter-spacing: 3px;
   margin-bottom: 40px;
   text-align: center;

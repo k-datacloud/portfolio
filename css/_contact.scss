@@ -108,9 +108,9 @@
         }
 
         &__title {
-            font-size: 30px;
+            font-size: 40px;
             @include functions.unjoined;
-            font-weight: 500;
+            font-weight: normal;
             letter-spacing: 3px;
             margin-bottom: 40px;
             text-align: center;
