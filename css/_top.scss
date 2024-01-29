@@ -274,7 +274,7 @@ html {
 
 .contact {
     width: 100%;
-    margin-bottom: 160px;
+    margin-bottom: 180px;
 
     @include functions.respond-to(tb) {
 
@@ -301,7 +301,7 @@ html {
         letter-spacing: 5px;
         font-weight: 500;
         color: #1A1919;
-        padding: 160px 0 160px 120px;
+        padding: 180px 0 160px 120px;
         position: relative;
 
         &::after {
@@ -399,7 +399,7 @@ html {
     .footer-inner {
         width: 80%;
         margin: 0 auto;
-        padding: 80px 80px 60px 80px;
+        padding: 80px 80px 20px 80px;
 
         @include functions.respond-to(tb) {
             width: 90%;
@@ -407,27 +407,18 @@ html {
         }
     }
 
-    .footer-menu {
-        padding-top: 20px;
-        margin-bottom: 40px;
-
-        @include functions.respond-to(tb) {
-            margin-bottom: 20px;
-        }
-    }
-
     .footer-list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
-        border-top: 1px solid #FFFFFF;
 
         &__link {
             @include functions.unjoined;
             font-weight: 500;
             letter-spacing: .1rem;
             color: #FFFFFF;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             position: relative;
 
             @include functions.respond-to(tb) {
@@ -465,6 +456,6 @@ html {
         font-size: 10px;
         letter-spacing: 1px;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 0 80px 0;
     }
 }

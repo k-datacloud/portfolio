@@ -17,11 +17,8 @@
             <li class="footer-list__item">
                 <a class="footer-list__link" href="<?php echo get_page_link(9); ?>">CONTACT</a>
             </li>
-        </ul>
-        <ul class="footer-list footer-follow">
             <li class="footer-list__item">
-                <a class="footer-list__link" target="_blank"
-                    href="https://github.com/k-datacloud?tab=repositories">Github</a>
+                <a class="footer-list__link" target="_blank" href="https://github.com/k-datacloud?tab=repositories">Github</a>
             </li>
             <li class="footer-list__item">
                 <a class="footer-list__link" target="_blank" href="https://www.linkedin.com/in/s-kaisei/">Linkedin</a>
