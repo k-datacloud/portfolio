@@ -5,8 +5,9 @@
     font-weight: 400;
 }
 
-@mixin unjoined {
-    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+@mixin raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 $breakpoints: (

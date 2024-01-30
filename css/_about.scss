@@ -133,7 +133,7 @@ html {
 
             &__text {
                 width: 100%;
-                @include functions.notosans;
+                @include functions.raleway;
                 color: #333333;
                 line-height: 2;
                 font-size: 1.6rem;
@@ -142,7 +142,7 @@ html {
                 word-spacing: normal;
 
                 &--ja {
-                    @include functions.notosans;
+                    @include functions.raleway;
                     color: #333333;
                     line-height: 2;
                     font-size: 1.6rem;
@@ -201,6 +201,7 @@ html {
                 line-height: 2;
                 letter-spacing: 1px;
                 margin-bottom: 30px;
+                @include functions.raleway;
 
                 @include functions.respond-to(sp) {
                     font-size: 1.2rem;
