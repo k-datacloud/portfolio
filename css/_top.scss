@@ -65,7 +65,7 @@ html {
             position: absolute;
             top: 50%;
             animation: transformtext linear infinite;
-            animation-duration: 20s;
+            animation-duration: 24s;
 
             @include functions.respond-to(sp) {
                 display: none;
