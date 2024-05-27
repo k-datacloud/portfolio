@@ -25,9 +25,9 @@
                         a big
                         hope, I am also interested in living and working abroad.
                     </p>
-                    <p class="profile__text--ja">兵庫県在住で2002年生まれの現在21才。
-                        高校を卒業後はリゾートバイトなどさまざまなことを経験。ブログで発信していた大学生に触発され、独学でプログラミングの勉強をスタート。主にフロントエンドの方が開発経験が多いです。
-                        また、英語や海外での生活にも興味を持っています。自分が知らないことを知ることが好き。「今を楽しく生きる」がモットーです。
+                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。
+                        高校卒業後、リゾートバイトなどさまざまな経験を積みました。ブログで発信していた大学生に触発され、独学でプログラミングの勉強をスタート。主にフロントエンドの方が開発経験が多いです。
+                        また、英語にも興味を持っており、新しいことを学ぶことが好きです。「今を楽しく生きる」がモットーです。
                     </p>
                 </div>
             </div>
@@ -35,12 +35,12 @@
                 <h2 class="skills-title" id="skills">Development</h2>
                 <h3 class="skills__title">Frontend</h3>
                 <p class="skills__text">
-                    開発経験がある言語はHTML、CSS、JavaScript。主にウェブサイトやWebアプリでの実装経験がある。HTMLやCSSは基本的なコードであれば調べなくても記述可能でCSSはSassを用いた記述やBEMなどの命名規則に準じた記述も可能。JSに関しては調べながらであれば開発やコードの記述も可能。
+                    開発経験がある言語はHTML、CSS、JavaScript。主にウェブサイトやWebアプリでの実装経験あり。HTMLやCSSは基本的なコードであれば調べなくても記述可能できます。CSSはSassを用いた記述やBEMなどの命名規則に準じた記述も可能。JSに関しては調べながらであれば開発やコードの記述も可能。
                     フレームワークはVueを使った経験があり、VueとVuetifyを用いたWebアプリケーションの開発経験あり。
                 </p>
                 <h3 class="skills__title">Backend</h3>
                 <p class="skills__text">
-                    WordPressを用いたウェブサイト、PythonのDjangoを用いたアプリの開発経験あり。WordPressはオリジナルテーマでの開発が可能。Pythonは開発歴は一番浅いがとても書きやすく面白くて好き。KaggleランクはContributors。
+                    WordPressを使用したウェブサイトの開発や、PythonのDjangoを使用したアプリの開発経験があります。WordPressはオリジナルテーマでの開発経験あり。Pythonは開発歴は一番浅いですが、とても書きやすく面白くて好きです。KaggleランクはContributors。
                 </p>
                 <ul class="skills-menu">
                     <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
