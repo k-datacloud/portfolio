@@ -58,8 +58,7 @@ html {
   letter-spacing: 3px;
   position: absolute;
   top: 50%;
-  animation: transformtext linear infinite;
-  animation-duration: 24s;
+  animation: transformtext 24s linear infinite;
 }
 @media (max-width: 768px) {
   .frontbody .mv__title {
@@ -268,10 +267,12 @@ html {
   }
 }
 .contact .contact-inner {
-  display: block;
+  display: flex;
+  background-color: #F5F5F5;
+  padding: 120px 0;
   width: 100%;
   margin: 0 auto;
-  background-color: #F5F5F5;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .contact .contact-inner {
@@ -279,85 +280,42 @@ html {
     width: 100%;
   }
 }
-.contact__title {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  font-size: 70px;
-  letter-spacing: 5px;
+.contact__title1 {
+  animation: textmove 14s linear infinite;
+  white-space: nowrap;
+}
+.contact__title2 {
+  animation: textmove 14s linear infinite;
+  white-space: nowrap;
+}
+@keyframes textmove {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.contact .text-loop {
+  font-size: 100px;
+  letter-spacing: 0.4rem;
   font-weight: bold;
   color: #1A1919;
-  padding: 180px 0 160px 120px;
-  position: relative;
-}
-.contact__title::after {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 2px;
-  background-color: #1A1919;
-  position: absolute;
-  bottom: 100px;
-  transform: scaleX(0);
-  transform-origin: left top;
-  transition: 0.3s ease-in-out;
-}
-.contact__title:hover::after {
-  transform: scaleX(1);
-  transition: 0.3s ease-in-out;
-}
-.contact__title--sub {
-  display: block;
-  font-size: 30px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  margin-top: 20px;
-  color: #1A1919;
+  animation: loopText 10s linear infinite;
+  padding: 0 20px;
 }
 @media (max-width: 768px) {
-  .contact__title--sub {
+  .contact .text-loop {
     font-size: 14px;
     letter-spacing: 1px;
     margin-top: 12px;
     text-align: center;
   }
 }
-@media (max-width: 768px) {
-  .contact__title {
-    font-size: 30px;
-    letter-spacing: 3px;
-    padding: 0;
-    text-align: center;
+@keyframes loopText {
+  0% {
+    transform: translateX(100%);
   }
-}
-.contact__text {
-  color: #1A1919;
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  line-height: 2;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
-@media (max-width: 1024px) {
-  .contact__text {
-    font-size: 14px;
+  100% {
+    transform: translateX(-100%);
   }
-}
-.contact .btn {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 270px;
-  padding: 20px 0;
-  background-color: #FFFFFF;
-  border: 1px solid #1A1919;
-  color: #1A1919;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  font-weight: 500;
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
 }
 
 .footer {
@@ -861,6 +819,26 @@ html {
 }
 .works .sub-works .works-item {
   width: 100%;
+  position: relative;
+}
+.works .sub-works .works-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(26, 25, 25, 0.5);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.works .sub-works .works-item:hover::after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
 }
 .works .sub-works .wp-post-image {
   width: 100%;
