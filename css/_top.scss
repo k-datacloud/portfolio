@@ -102,7 +102,7 @@ html {
     box-sizing: border-box;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 990;
 
     .header-inner {
         padding: 0 80px 0 60px;
@@ -311,13 +311,12 @@ html {
     }
 
     .text-loop {
+        @include functions.raleway;
         font-size: 120px;
         letter-spacing: .4rem;
-        font-weight: bold;
+        font-weight: 500;
         color: #1A1919;
-        animation: loopText 10s linear infinite;
         padding: 0 20px;
-
 
         @include functions.respond-to(sp) {
             font-size: 14px;
@@ -326,19 +325,6 @@ html {
             text-align: center;
         }
     }
-
-    @keyframes loopText {
-        0% {
-            transform: translateX(100%);
-        }
-
-        100% {  
-            transform: translateX(-100%);
-        }
-        
-    }
-
-
 
 }
 
@@ -379,8 +365,8 @@ html {
         gap: 30px;
 
         &__link {
-            @include functions.notosans;
-            font-weight: 500;
+            @include functions.raleway;
+            font-weight: normal;
             letter-spacing: .1rem;
             color: #FFFFFF;
             font-size: 1.6rem;

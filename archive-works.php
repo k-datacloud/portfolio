@@ -7,7 +7,6 @@
 
 <body class="works body">
     <?php get_template_part('component/header-nav'); ?>
-    <p class="open-anime">WORKS</p>
 
     <section class="sub-works">
         <div class="sub-works-inner">

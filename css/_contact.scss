@@ -14,74 +14,26 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 900;
-        /*他のスタッキングコンテキストとかち合った時用*/
-        background-color: rgba($color: #1A1919, $alpha: 1);
-        /*シャッターの色*/
-        animation: min-anim 3s forwards;
-        /*アニメーション付与*/
+        z-index: 999;
+        background-color: rgba($color: #FFFFFF, $alpha: 1);
+        animation: min-anim 2s forwards;
         transform-origin: left;
-        /*変化の起点*/
     }
 
     /*背景が縮むアニメーション*/
     @keyframes min-anim {
         0% {
             transform: scaleX(1);
-            /*画面全体を覆う*/
-        }
-
-        20% {
-            transform: scaleX(1);
-        }
-
-        50% {
-            transform: scaleX(1);
         }
 
         80% {
             transform: scaleX(1);
+            background-color: rgba($color: #FFFFFF, $alpha: .8);
         }
 
         100% {
-            transform-origin: right;
             transform: scaleX(0);
-            /*高さ0*/
             visibility: hidden;
-            /*非表示*/
-
-        }
-    }
-
-    .open-anime {
-        animation: open-anim 2.5s forwards;
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFFFFF;
-        @include functions.notosans;
-        font-size: 30px;
-        font-weight: bold;
-        letter-spacing: 1.8px;
-
-        @include functions.respond-to(tb) {
-            font-size: 24px;
-        }
-
-        @keyframes open-anim {
-            0% {
-                visibility: visible;
-            }
-
-            90% {
-                visibility: hidden;
-            }
-
-            100% {
-                visibility: hidden;
-            }
         }
     }
 
@@ -99,8 +51,6 @@
             width: 80%;
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 0 20px 0;
-
             @include functions.respond-to(sp) {
                 width: 90%;
                 padding: 40px 0 10px 0;
@@ -108,11 +58,12 @@
         }
 
         &__title {
-            font-size: 40px;
+            font-size: 60px;
             @include functions.raleway;
             font-weight: normal;
-            letter-spacing: 3px;
-            margin-bottom: 40px;
+            letter-spacing: .3rem;
+            width: 80%;
+            margin: 0 auto 60px auto;
             text-align: center;
 
             @include functions.respond-to(sp) {
@@ -124,7 +75,7 @@
         &__text {
             width: 70%;
             margin: 0 auto;
-            font-size: 16px;
+            font-size: 15px;
             letter-spacing: 1.4px;
             line-height: 1.5;
             margin-bottom: 40px;
@@ -152,7 +103,7 @@
                 font-size: 16px;
                 letter-spacing: 1px;
                 color: #333333;
-                font-weight: 600;
+                font-weight: normal;
                 margin-bottom: 20px;
 
                 @include functions.respond-to(sp) {

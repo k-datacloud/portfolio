@@ -9,8 +9,6 @@
 
     <?php get_template_part('component/header-nav'); ?>
 
-    <p class="open-anime">ABOUT</p>
-
     <section class="sub-about">
         <div class="sub-about-inner">
             <div class="profile">
