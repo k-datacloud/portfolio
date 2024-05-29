@@ -22,13 +22,16 @@
             <div class="sub-works-menu">
                 <?php if ($works_query->have_posts()) :
                     while ($works_query->have_posts()) : $works_query->the_post(); ?>
-                        <a class="works-wrap__link" href="<?php the_permalink(); ?>">
+                        <div class="works-wrap">
                             <div class="works-item">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php the_post_thumbnail('full'); ?>
                                 <?php endif; ?>
+                                <div class="mask"></div>
+                                <a class="works-item__link" href="<?php the_permalink(); ?>">View More</a>
                             </div>
-                        </a>
+                            <p class="works-item__title"><?php the_title(); ?></p>
+                        </div>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
 
