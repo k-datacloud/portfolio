@@ -199,6 +199,9 @@ html {
   }
 }
 .header .grnav .header-list__link {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   text-decoration: none;
   color: #1A1919;
   position: relative;
@@ -253,7 +256,7 @@ html {
 }
 @media (max-width: 768px) {
   .contact .contact-inner {
-    padding: 80px 0;
+    padding: 60px 0;
     width: 100%;
   }
 }
@@ -282,7 +285,7 @@ html {
 }
 @media (max-width: 768px) {
   .contact .text-loop {
-    font-size: 14px;
+    font-size: 60px;
     letter-spacing: 1px;
     margin-top: 12px;
     text-align: center;
@@ -416,13 +419,78 @@ html {
   margin-bottom: 160px;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .about-page .sub-about {
+    margin-bottom: 80px;
+  }
+}
+.about-page .sub-about__title {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 100px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 100px;
+  letter-spacing: 0.5rem;
+  padding: 0 5vw;
+}
+.about-page .sub-about .sub-about-img {
+  width: 80%;
+  margin: 0 auto 100px auto;
+}
+.about-page .sub-about .sub-about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+.about-page .sub-about .profile {
+  display: flex;
+}
+.about-page .sub-about .profile__title {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 80px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.about-page .sub-about .profile .profile-table {
+  width: 80%;
+}
+.about-page .sub-about .profile .profile-table__title {
+  width: 30%;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+  padding: 20px 0;
+}
+.about-page .sub-about .profile .profile-table__text {
+  width: 70%;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+  text-align: center;
+}
+.about-page .sub-about .profile .profile-table__text--age {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
 .about-page .sub-about .sub-about-inner {
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 12.5vw;
 }
 @media (max-width: 768px) {
   .about-page .sub-about .sub-about-inner {
-    width: 90%;
+    padding: 0 5vw;
   }
 }
 .about-page .sub-about .profile {
@@ -484,6 +552,11 @@ html {
 .about-page .sub-about .skills {
   width: 100%;
   margin: 0 auto 80px auto;
+}
+@media (max-width: 768px) {
+  .about-page .sub-about .skills {
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 768px) {
   .about-page .sub-about .skills__item {
@@ -681,15 +754,15 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 3px;
+  letter-spacing: 0.4rem;
   margin-bottom: 80px;
   text-align: center;
 }
 @media (max-width: 768px) {
   .works .sub-works__title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 300;
   }
 }
 .works .sub-works .sub-works-menu {
@@ -809,17 +882,17 @@ html {
   .contact-page .contact-form {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 60px;
   }
 }
 .contact-page .contact-form .contact-wrap {
-  width: 80%;
   max-width: 900px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form .contact-wrap {
-    width: 90%;
-    padding: 40px 0 10px 0;
+    width: 100%;
+    padding: 20px 5vw 0;
   }
 }
 .contact-page .contact-form__title {
@@ -829,26 +902,32 @@ html {
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.3rem;
-  width: 80%;
-  margin: 0 auto 60px auto;
+  margin-bottom: 60px;
   text-align: center;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form__title {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 40px;
   }
 }
 .contact-page .contact-form__text {
-  width: 70%;
-  margin: 0 auto;
+  padding: 0 20vw;
   font-size: 15px;
   letter-spacing: 1.4px;
   line-height: 1.5;
   margin-bottom: 40px;
+  text-align: justify;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-form__text {
+    font-size: 12px;
+    padding: 0 5vw;
+    margin-bottom: 20px;
+  }
 }
 .contact-page .contact-form .wpcf7 {
   width: 70%;
@@ -859,11 +938,11 @@ html {
     width: 90%;
   }
 }
+.contact-page .contact-form .wpcf7 .wpcf7-form:last-child {
+  margin-bottom: 0;
+}
 .contact-page .contact-form .wpcf7 p {
   margin-bottom: 40px;
-}
-.contact-page .contact-form .wpcf7 p:last-child {
-  margin-bottom: 0;
 }
 .contact-page .contact-form .wpcf7 label {
   font-family: "Noto Sans JP", sans-serif;
@@ -882,7 +961,7 @@ html {
 }
 .contact-page .contact-form .wpcf7 input {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 16px 20px;
   box-sizing: border-box;
 }
@@ -916,7 +995,7 @@ html {
 }
 .contact-page .contact-form .wpcf7 textarea {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 16px 20px;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
@@ -1042,18 +1121,19 @@ html {
   margin-bottom: 120px;
 }
 .post-page__title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 30px;
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 80px;
+  color: #333333;
 }
 @media (max-width: 1024px) {
   .post-page__title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 40px;
     letter-spacing: 2px;
   }
@@ -1080,18 +1160,19 @@ html {
   margin-bottom: 0;
 }
 .post-page .detail__title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 500;
   flex: 1;
+  color: #333333;
 }
 @media (max-width: 768px) {
   .post-page .detail__title {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
+    font-size: 2rem;
+    margin-bottom: 16px;
   }
 }
 .post-page .detail__text {
@@ -1104,6 +1185,19 @@ html {
   letter-spacing: 1px;
   line-height: 1.6;
   text-align: justify;
+  color: #333333;
+}
+.post-page .detail__text--url {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  flex: 5;
+  color: #333333;
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .post-page .detail__text {

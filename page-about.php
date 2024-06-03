@@ -10,6 +10,29 @@
     <?php get_template_part('component/header-nav'); ?>
 
     <section class="sub-about">
+        <!-- <h2 class="sub-about__title">About</h2>
+        <div class="sub-about-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="">
+        </div> -->
+        <!-- <div class="about-wrap">
+            <div class="profile">
+                <h3 class="profile__title">Profile</h3>
+                <table class="profile-table">
+                    <tr>
+                        <th class="profile-table__title">Name</th>
+                        <td class="profile-table__text">Sadatoki Kaisei</td>
+                    </tr>
+                    <tr>
+                        <th class="profile-table__title">Age</th>
+                        <td class="profile-table__text--age">21</td>
+                    </tr>
+                    <tr>
+                        <th class="profile-table__title">Place</th>
+                        <td class="profile-table__text">Hyogo, Japan</td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
         <div class="sub-about-inner">
             <div class="profile">
                 <div class="about-wrap">
@@ -41,11 +64,16 @@
                     WordPressを使用したウェブサイトの開発や、PythonのDjangoを使用したアプリの開発経験があります。WordPressはオリジナルテーマでの開発経験あり。Pythonは開発歴は一番浅いですが、とても書きやすく面白くて好きです。KaggleランクはContributors。
                 </p>
                 <ul class="skills-menu">
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse"
+                            src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--float"
+                            src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse"
+                            src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--float"
+                            src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse"
+                            src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
                 </ul>
             </div>
         </div>

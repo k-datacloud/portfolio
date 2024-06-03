@@ -54,12 +54,80 @@ html {
         margin-bottom: 160px;
         position: relative;
 
+        @include functions.respond-to(tb) {
+            margin-bottom: 80px;
+        }
+
+        &__title {
+            @include functions.raleway;
+            font-size: 100px;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 100px;
+            letter-spacing: .5rem;
+            padding: 0 5vw;
+        }
+
+        .sub-about-img {
+            width: 80%;
+            margin: 0 auto 100px auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50px;
+            }
+        }
+
+        .profile {
+            display: flex;
+
+            &__title {
+                @include functions.raleway;
+                font-size: 80px;
+                font-weight: 500;
+                color: #333333;
+                margin-bottom: 30px;
+            }
+
+            .profile-table {
+                width: 80%;
+
+
+                &__title {
+                    width: 30%;
+                    @include functions.raleway;
+                    font-size: 24px;
+                    font-weight: normal;
+                    color: #333333;
+                    padding: 20px 0;
+                }
+
+                &__text {
+                    width: 70%;
+                    @include functions.raleway;
+                    font-size: 24px;
+                    font-weight: normal;
+                    color: #333333;
+                    text-align: center;
+
+                    &--age {
+                        font-size: 32px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+
+
+            }
+        }
+
         .sub-about-inner {
-            width: 75%;
-            margin: 0 auto;
+            width: 100%;
+            padding: 0 12.5vw;
 
             @include functions.respond-to(sp) {
-                width: 90%;
+                padding: 0 5vw;
             }
         }
 
@@ -116,6 +184,10 @@ html {
         .skills {
             width: 100%;
             margin: 0 auto 80px auto;
+
+            @include functions.respond-to(sp) {
+                margin-bottom: 0px;
+            }
 
             &__item {
                 

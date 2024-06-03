@@ -9,10 +9,10 @@
     <?php get_template_part('component/header-nav'); ?>
 
     <section class="contact-form">
-        <h2 class="contact-form__title">Contact me</h2>
+        <h2 class="contact-form__title">Contact</h2>
+        <p class="contact-form__text">
+            お仕事のご相談やご依頼等はお気軽にお問い合わせください。その他こんなことを一緒にやってみたい！など何でもお待ちしております。内容を確認させていただいた後、ご連絡させていただきます。</p>
         <div class="contact-wrap">
-            <p class="contact-form__text">
-                お仕事のご相談やご依頼等はお気軽にお問い合わせください。<br>その他こんなことを一緒にやってみたい！など何でもお待ちしております。内容を確認させていただいた後、ご連絡させていただきます。</p>
             <?php echo do_shortcode('[contact-form-7 id="29b6eed" title="お問い合わせ"]'); ?>
         </div>
     </section>

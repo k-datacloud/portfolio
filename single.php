@@ -14,19 +14,25 @@
             <h2 class="post-page__title"><?php the_title(); ?></h2>
             <div class="detail">
                 <div class="detail-item">
-                    <h3 class="detail__title">Outline</h3>
+                    <h3 class="detail__title">OUTLINE</h3>
                     <?php $outline = get_post_meta(get_the_ID(), 'Outline', true); ?>
                     <p class="detail__text"><?php echo $outline; ?></p>
                 </div>
                 <div class="detail-item">
                     <h3 class="detail__title">URL</h3>
                     <?php $URL = get_post_meta(get_the_ID(), 'URL', true); ?>
-                    <p class="detail__text"><?php echo $URL; ?></p>
+                    <?php if ($URL) : ?>
+                    <p class="detail__text"><a class="detail__text--url" href="<?php echo $URL; ?>"
+                            target="_blank"><?php echo $URL; ?></a></p>
+                    <?php endif; ?>
                 </div>
                 <div class="detail-item">
                     <h3 class="detail__title">Github</h3>
                     <?php $Github = get_post_meta(get_the_ID(), 'Github', true); ?>
-                    <p class="detail__text"><?php echo $Github; ?></p>
+                    <?php if ($Github) : ?>
+                    <p class="detail__text"><a class="detail__text--url" href="<?php echo $Github; ?>"
+                            target="_blank"><?php echo $Github; ?></a></p>
+                    <?php endif; ?>
                 </div>
             </div>
             <p class="post-page__text"><a class="post-page__link"

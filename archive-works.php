@@ -12,8 +12,8 @@
         <div class="sub-works-inner">
             <h2 class="sub-works__title">WORKS</h2>
             <?php $args = array(
-                'post_type' => 'works', // 既存の投稿タイプを指定
-                'posts_per_page' => -1, // すべての投稿を取得
+                'post_type' => 'works',
+                'posts_per_page' => -1,
             );
 
             $works_query = new WP_Query($args); ?>

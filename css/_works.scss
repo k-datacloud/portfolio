@@ -60,14 +60,14 @@
             font-size: 40px;
             @include functions.raleway;
             font-weight: normal;
-            letter-spacing: 3px;
+            letter-spacing: .4rem;
             margin-bottom: 80px;
             text-align: center;
 
             @include functions.respond-to(sp) {
-                font-size: 24px;
-                margin-bottom: 20px;
-                letter-spacing: 2px;
+                font-size: 40px;
+                margin-bottom: 40px;
+                font-weight: 300;
             }
         }
 

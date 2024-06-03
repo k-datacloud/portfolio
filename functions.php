@@ -1,7 +1,5 @@
 <?php add_filter('show_admin_bar', '__return_false');
 add_theme_support('post-thumbnails');
-add_theme_support('title-tag');
-
 
 function register_post_works()
 {

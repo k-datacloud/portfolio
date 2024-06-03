@@ -228,6 +228,7 @@ html {
             }
 
             &__link {
+                @include functions.raleway;
                 text-decoration: none;
                 color: #1A1919;
                 position: relative;
@@ -288,7 +289,7 @@ html {
         overflow: hidden;
 
         @include functions.respond-to(sp) {
-            padding: 80px 0;
+            padding: 60px 0;
             width: 100%;
         }
     }
@@ -319,7 +320,7 @@ html {
         padding: 0 20px;
 
         @include functions.respond-to(sp) {
-            font-size: 14px;
+            font-size: 60px;
             letter-spacing: 1px;
             margin-top: 12px;
             text-align: center;
