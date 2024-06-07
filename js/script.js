@@ -1,13 +1,34 @@
 const hum = document.querySelector('.humburger')
-const line = document.querySelectorAll('.line')
-const headTitle = document.querySelector('.header__link')
-const nav = document.querySelector('.grnav')
+const nav = document.querySelector('.sp-nav')
+const grnav = document.querySelector('.sp-grnav')
+const list = document.querySelectorAll('.header-list__item')
+const close = document.querySelector('.close')
 hum.addEventListener('click', () => {
-    nav.classList.toggle('menu-act');
-    line[0].classList.toggle('line1-act')
-    line[1].classList.toggle('line2-act')
-    line[2].classList.toggle('line3-act')
+    nav.classList.toggle('sp-nav-act');
+    grnav.classList.toggle('menu-act');
+    close.classList.toggle('close-act');
+
+    setTimeout(() => {
+        list.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.toggle('item-act')
+            }, 150 * index)
+        })
+    }, 700)
+
+    hum.classList.toggle('hm-act')
 });
+
+
+close.addEventListener('click', () => {
+    nav.classList.remove('sp-nav-act');
+    grnav.classList.remove('menu-act');
+    list.forEach((item, index) => {
+        item.classList.remove('item-act')
+    })
+    hum.classList.remove('hm-act')
+    close.classList.toggle('close-act')
+})
 
 
 document.addEventListener('DOMContentLoaded', function () {
