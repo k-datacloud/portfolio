@@ -47,8 +47,8 @@
                         hope, I am also interested in living and working abroad.
                     </p>
                     <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。
-                        高校卒業後、リゾートバイトなどさまざまな経験を積みました。ブログで発信していた大学生に触発され、独学でプログラミングの勉強をスタート。主にフロントエンドの方が開発経験が多いです。
-                        また、英語にも興味を持っており、新しいことを学ぶことが好きです。「今を楽しく生きる」がモットーです。
+                        高校卒業後はリゾートバイトなどさまざまな経験を積みました。大学生が発信していたブログに触発され、独学でプログラミングの勉強をスタート。主にWebサイトの構築やフロントエンド開発に取り組みました。
+                        今は英語にちょっとハマっていて特に明確な理由はないけど勉強中。自分のペースで楽しみながら少しずつ取り組んでいます。「心が豊かで生きること」がモットーです。
                     </p>
                 </div>
             </div>
@@ -61,19 +61,14 @@
                 </p>
                 <h3 class="skills__title">Backend</h3>
                 <p class="skills__text">
-                    WordPressを使用したウェブサイトの開発や、PythonのDjangoを使用したアプリの開発経験があります。WordPressはオリジナルテーマでの開発経験あり。Pythonは開発歴は一番浅いですが、とても書きやすく面白くて好きです。KaggleランクはContributors。
+                    WordPressを使用したウェブサイトの開発や、PythonのDjangoを使用したアプリの開発経験があります。WordPressはオリジナルテーマでの開発経験あり。Pythonは開発歴は一番浅いですが、とても書きやすく面白くて好きです。
                 </p>
                 <ul class="skills-menu">
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float"
-                            src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float"
-                            src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse"
-                            src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
+                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
                 </ul>
             </div>
         </div>

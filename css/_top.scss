@@ -210,7 +210,7 @@ html {
     .sp-grnav {
 
         @include functions.respond-to(tb) {
-            width: 70%;
+            width: 60%;
             height: 100vh;
             background-color: #000000;
             position: fixed;
@@ -226,8 +226,7 @@ html {
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            padding-left: 10.5vw;
+            padding: 43vw 0 20vw 10.5vw;
 
             &__title {
                 @include functions.raleway;

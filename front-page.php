@@ -12,13 +12,15 @@
     <div class="mv">
         <div class="mv-inner">
             <div class="mv-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/florian_krumm_1osIUArK5oA_unsplash_gray.jpg" alt="メインビジュアル">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/florian_krumm_1osIUArK5oA_unsplash_gray.jpg"
+                    alt="メインビジュアル">
             </div>
             <ul class="mv-list">
-                <li class="mv-item"><a class="mv-link" target="_blank" href="https://www.linkedin.com/in/s-kaisei/">Linkedin</a></li>
-                <li class="mv-item"><a class="mv-link" target="_blank" href="https://github.com/k-datacloud?tab=repositories">Github</a></li>
+                <li class="mv-item"><a class="mv-link" target="_blank"
+                        href="https://www.linkedin.com/in/s-kaisei/">Linkedin</a></li>
+                <li class="mv-item"><a class="mv-link" target="_blank"
+                        href="https://github.com/k-datacloud?tab=repositories">Github</a></li>
             </ul>
-            <p class="copyright">©SK-PORTFOLIO</p>
         </div>
     </div>
 
