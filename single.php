@@ -19,6 +19,11 @@
                     <p class="detail__text"><?php echo $outline; ?></p>
                 </div>
                 <div class="detail-item">
+                    <h3 class="detail__title">Role</h3>
+                    <?php $role = get_post_meta(get_the_ID(), 'Role', true); ?>
+                    <p class="detail__text--en"><?php echo $role; ?></p>
+                </div>
+                <div class="detail-item">
                     <h3 class="detail__title">URL</h3>
                     <?php $URL = get_post_meta(get_the_ID(), 'URL', true); ?>
                     <?php if ($URL) : ?>

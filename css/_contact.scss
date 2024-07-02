@@ -39,7 +39,6 @@
 
     .contact-form {
         width: 100%;
-        padding-top: 200px;
         margin-bottom: 120px;
 
         @include functions.respond-to(tb) {

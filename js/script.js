@@ -55,3 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 })
+
+const circle = document.querySelector('.circle')
+const text = circle.textContent
+const angle = 360 / text.length
+const radius = 100
+circle.textContent = ''
+
+for (let i = 0; i < text.length; i++) {
+    const span = document.createElement('span')
+    span. classList.add('circle__text')
+    span.textContent = text[i]
+    span.style.transform = `rotate(${angle * i}deg) translate(${radius}px) rotate(-${angle * i}deg)`
+    circle.appendChild(span)
+}

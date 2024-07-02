@@ -38,7 +38,6 @@
 
     .sub-works {
         width: 100%;
-        padding-top: 200px;
         margin-bottom: 160px;
 
         @include functions.respond-to(tb) {
