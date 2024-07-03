@@ -14,6 +14,10 @@ html {
     overflow: hidden;
     background-color: #FFFFFF;
 
+    @include functions.respond-to(sp) {
+        overflow: auto;
+    }
+
     
 
     .mv {
@@ -433,7 +437,7 @@ html {
         overflow: hidden;
 
         @include functions.respond-to(sp) {
-            padding: 100px 0px;
+            padding: 70px 0px;
             width: 100%;
         }
     }
@@ -464,7 +468,7 @@ html {
         padding: 0 20px;
 
         @include functions.respond-to(sp) {
-            font-size: 60px;
+            font-size: 70px;
             letter-spacing: 1px;
             margin-top: 12px;
             text-align: center;
@@ -500,7 +504,7 @@ html {
        gap: 60px;
 
         @include functions.respond-to(sp) {
-            padding: 5vw 5vw;
+            padding: 7vw 5vw;
             gap: 20px;
             flex-direction: column;
         }
@@ -567,13 +571,9 @@ html {
     .copyright {
         @include functions.raleway;
         color: #777777;
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: 3px;
         text-align: center;
         padding-bottom: 32px;
-
-        @include functions.respond-to(tb) {
-            padding-bottom: 32px;
-        }
     }
 }
