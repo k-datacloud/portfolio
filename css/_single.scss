@@ -69,6 +69,7 @@
         &__title {
             @include functions.raleway;
             font-size: 2rem;
+            line-height: 1.8;
             letter-spacing: 1px;
             font-weight: 500;
             flex: 1;
@@ -77,6 +78,7 @@
             @include functions.respond-to(sp) {
                 font-size: 1.6rem;
                 margin-bottom: 10px;
+                line-height: 1.6;
             }
         }
 
@@ -84,16 +86,21 @@
             flex: 5;
             text-align: start;
             @include functions.notosans;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             letter-spacing: 1px;
-            line-height: 1.6;
+            line-height: 1.8;
             text-align: justify;
             color: #333333;
+
+            @include functions.respond-to(sp) {
+                font-size: 1.2rem;
+            }
 
             &--en {
                 @include functions.raleway;
                 font-weight: 500;
                 font-size: 1.8rem;
+                line-height: 1.8;
                 letter-spacing: 1px;
                 text-align: justify;
                 flex: 5;
@@ -101,7 +108,6 @@
 
                 @include functions.respond-to(sp) {
                     font-size: 1.4rem;
-                    line-height: 1.6;
                 }
             }
 
@@ -109,6 +115,7 @@
                 @include functions.raleway;
                 font-weight: normal;
                 font-size: 1.6rem;
+                line-height: 1.8;
                 letter-spacing: 1px;
                 text-align: justify;
                 flex: 5;
@@ -119,9 +126,12 @@
                     font-size: 1.2rem;
                 }
             }
+        }
+
+        .text-outline {
 
             @include functions.respond-to(sp) {
-                font-size: 1.2rem;
+                line-height: 2.4;
             }
         }
     }

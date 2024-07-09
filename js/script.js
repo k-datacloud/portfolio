@@ -56,16 +56,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 })
 
-const circle = document.querySelector('.circle')
-const text = circle.textContent
-const angle = 360 / text.length
-const radius = 100
-circle.textContent = ''
+const profiles = document.querySelectorAll('.profile');
 
-for (let i = 0; i < text.length; i++) {
-    const span = document.createElement('span')
-    span. classList.add('circle__text')
-    span.textContent = text[i]
-    span.style.transform = `rotate(${angle * i}deg) translate(${radius}px) rotate(-${angle * i}deg)`
-    circle.appendChild(span)
-}
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    
+    profiles.forEach(profile => {
+        const top = profile.getBoundingClientRect().top;
+        const profileTitle = profile.querySelector('.profile__title');
+        console.log(scrollY);
+        console.log(top);
+
+        if ( scrollY > ( top + 100 ) ) {
+            profileTitle.classList.add('active');
+        } else {
+            profileTitle.classList.remove('active');
+        }
+    });
+});

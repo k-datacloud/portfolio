@@ -51,3 +51,10 @@ function custom_taxonomy()
 }
 
 add_action('init', 'custom_taxonomy');
+
+// Contact Form 7の自動整形を無効化
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false()
+{
+    return false;
+}

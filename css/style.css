@@ -18,18 +18,16 @@ html {
 }
 .frontbody .mv {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 160px);
 }
 .frontbody .mv .mv-inner {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   height: 100%;
-  position: relative;
 }
 .frontbody .mv .mv-img {
-  width: 80%;
-  height: 65%;
-  margin: 0 auto 40px auto;
+  width: 100%;
+  padding: 0 10vw;
+  height: calc(80% - 20px);
 }
 @media (max-width: 768px) {
   .frontbody .mv .mv-img {
@@ -45,6 +43,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 60px;
+  padding: 0 80px;
+}
+@media (max-width: 768px) {
+  .frontbody .mv .mv-list {
+    padding: 0 20px;
+  }
 }
 .frontbody .mv .mv-item {
   margin-right: 30px;
@@ -63,20 +68,6 @@ html {
     font-size: 1.2rem;
   }
 }
-.frontbody .mv .copyright {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  padding: 10px 0;
-}
-@media (max-width: 768px) {
-  .frontbody .mv .copyright {
-    font-size: 1rem;
-  }
-}
 
 .header {
   width: 100%;
@@ -86,7 +77,7 @@ html {
   z-index: 999;
 }
 .header .header-inner {
-  padding: 0 80px 0 60px;
+  padding: 0 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -540,10 +531,7 @@ html {
 }
 
 .about-page {
-  background-color: #FFFFFF;
-  position: relative;
-  font-family: "Raleway", sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 @media (max-width: 1024px) {
   .about-page {
@@ -576,167 +564,240 @@ html {
     visibility: hidden;
   }
 }
-.about-page .sub-about {
+.about-page .about-mv {
   width: 100%;
-  margin-bottom: 160px;
-  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  padding: 0 4vw;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
-@media (max-width: 1024px) {
-  .about-page .sub-about {
-    margin-bottom: 80px;
-  }
-}
-.about-page .sub-about__title {
+.about-page .about-mv__title {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 100px;
-  font-weight: 500;
-  color: #333333;
-  margin-bottom: 100px;
-  letter-spacing: 0.5rem;
-  padding: 0 5vw;
+  font-weight: 700;
+  color: #000000;
 }
-.about-page .sub-about .sub-about-img {
-  width: 80%;
-  margin: 0 auto 100px auto;
-}
-.about-page .sub-about .sub-about-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 50px;
-}
-.about-page .sub-about .profile {
-  display: flex;
-}
-.about-page .sub-about .profile__title {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 80px;
-  font-weight: 500;
-  color: #333333;
-  margin-bottom: 30px;
-}
-.about-page .sub-about .profile .profile-table {
-  width: 80%;
-}
-.about-page .sub-about .profile .profile-table__title {
-  width: 30%;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 24px;
-  font-weight: normal;
-  color: #333333;
-  padding: 20px 0;
-}
-.about-page .sub-about .profile .profile-table__text {
-  width: 70%;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 24px;
-  font-weight: normal;
-  color: #333333;
-  text-align: center;
-}
-.about-page .sub-about .profile .profile-table__text--age {
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-}
-.about-page .sub-about .sub-about-inner {
-  width: 100%;
-  padding: 0 12.5vw;
-}
-@media (max-width: 768px) {
-  .about-page .sub-about .sub-about-inner {
-    padding: 0 5vw;
+@media (max-width: 1024px) {
+  .about-page .about-mv__title {
+    font-size: 60px;
   }
 }
-.about-page .sub-about .profile {
-  width: 100%;
-  margin: 0 auto 100px auto;
-}
-@media (max-width: 768px) {
-  .about-page .sub-about .profile {
-    margin-bottom: 60px;
-  }
-}
-.about-page .sub-about .profile__title {
-  font-family: "Raleway", sans-serif;
+.about-page .about-mv__text {
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 40px;
-  font-weight: 500;
-  color: #333333;
-  margin-bottom: 30px;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  align-items: center;
 }
-@media (max-width: 768px) {
-  .about-page .sub-about .profile__title {
+@media (max-width: 1024px) {
+  .about-page .about-mv__text {
     font-size: 24px;
   }
 }
-.about-page .sub-about .profile__text {
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: #333333;
-  line-height: 2;
-  font-size: 1.6rem;
-  text-align: justify;
-  margin-bottom: 20px;
-  word-spacing: normal;
+.about-page .about-mv .arrow-img {
+  width: 70px;
+  animation: arrow 2s infinite;
 }
-.about-page .sub-about .profile__text--ja {
+@media (max-width: 1024px) {
+  .about-page .about-mv .arrow-img {
+    width: 50px;
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about-page .space {
+  height: calc(100vh - 160px);
+}
+.about-page .about {
+  width: 100%;
+  padding-bottom: 160px;
+  position: relative;
+  z-index: 5;
+  background-color: #fbfbfb;
+}
+@media (max-width: 1024px) {
+  .about-page .about {
+    padding-bottom: 80px;
+  }
+}
+.about-page .about__title {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #333333;
-  line-height: 2;
-  font-size: 1.6rem;
+  font-size: 100px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.about-page .about .resume {
+  position: sticky;
+  width: 100px;
+  top: 50%;
+  left: 87%;
+  padding: 2vw 0;
+}
+@media (max-width: 1024px) {
+  .about-page .about .resume {
+    display: none;
+  }
+}
+.about-page .about .resume__text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  writing-mode: vertical-lr;
+  letter-spacing: 3px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.5;
+}
+.about-page .about .resume__text--en {
+  color: #717171;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+.about-page .about .about-inner {
+  width: 100%;
+  padding: 4vw 20vw;
+}
+@media (max-width: 1024px) {
+  .about-page .about .about-inner {
+    padding: 0 5vw;
+  }
+}
+.about-page .about .profile {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #000000;
+}
+@media (max-width: 768px) {
+  .about-page .about .profile {
+    margin-bottom: 32px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.about-page .about .profile__title {
+  flex: 1;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s;
+}
+@media (max-width: 768px) {
+  .about-page .about .profile__title {
+    font-size: 24px;
+  }
+}
+.about-page .about .profile .active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.about-page .about .profile__text {
+  flex: 3;
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .about-page .about .profile__text {
+    gap: 10px;
+  }
+}
+.about-page .about .profile__text--ja {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 2.2;
+  font-size: 1.5rem;
   text-align: justify;
   letter-spacing: 1px;
+  word-spacing: normal;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .profile__text--ja {
+  .about-page .about .profile__text--ja {
     font-size: 1.2rem;
-    line-height: 2;
+    line-height: 2.4;
   }
+}
+.about-page .about .profile__text--en {
+  color: #717171;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 2.4;
+  text-align: justify;
+  word-spacing: normal;
+  font-feature-settings: "kern" 0;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .profile__text {
+  .about-page .about .profile__text--en {
     font-size: 1.2rem;
   }
 }
-.about-page .sub-about .skills {
+.about-page .about .skills {
   width: 100%;
-  margin: 0 auto 80px auto;
+  padding: 0 20vw;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills {
-    margin-bottom: 0px;
+  .about-page .about .skills {
+    padding: 0 5vw;
   }
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills__item {
+  .about-page .about .skills__item {
     width: 30%;
   }
 }
-.about-page .sub-about .skills .skills-title {
+.about-page .about .skills .skills-title {
   font-weight: 500;
   font-size: 40px;
   color: #333333;
   margin-bottom: 40px;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills .skills-title {
+  .about-page .about .skills .skills-title {
     font-size: 24px;
   }
 }
-.about-page .sub-about .skills__title {
+.about-page .about .skills__title {
   font-size: 32px;
   color: #333333;
   letter-spacing: 1px;
@@ -744,11 +805,11 @@ html {
   font-weight: normal;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills__title {
+  .about-page .about .skills__title {
     font-size: 20px;
   }
 }
-.about-page .sub-about .skills__text {
+.about-page .about .skills__text {
   font-size: 1.6rem;
   color: #333333;
   line-height: 2;
@@ -759,21 +820,21 @@ html {
   font-style: normal;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills__text {
+  .about-page .about .skills__text {
     font-size: 1.2rem;
   }
 }
-.about-page .sub-about .skills__img {
+.about-page .about .skills__img {
   width: 80px;
 }
-.about-page .sub-about .skills__img--reverse {
+.about-page .about .skills__img--reverse {
   width: 80px;
   animation: waitAnimate_659845543 4s linear infinite;
   transform-origin: 50% 50%;
   perspective: 120px;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills__img--reverse {
+  .about-page .about .skills__img--reverse {
     width: 70px;
     display: block;
     margin: 0 auto;
@@ -801,13 +862,13 @@ html {
     transform: rotateY(360deg);
   }
 }
-.about-page .sub-about .skills__img--float {
+.about-page .about .skills__img--float {
   width: 80px;
   position: relative;
   animation: floatAndBack 5s ease-in-out infinite;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills__img--float {
+  .about-page .about .skills__img--float {
     width: 70px;
     display: block;
     margin: 0 auto;
@@ -837,24 +898,24 @@ html {
     animation-timing-function: ease-out;
   }
 }
-.about-page .sub-about .skills-menu {
+.about-page .about .skills-menu {
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about .skills-menu {
+  .about-page .about .skills-menu {
     flex-wrap: wrap;
     gap: 12px;
   }
 }
-.about-page .sub-about__img {
+.about-page .about__img {
   width: 240px;
   position: absolute;
   bottom: 10px;
   right: 30px;
 }
 @media (max-width: 768px) {
-  .about-page .sub-about__img {
+  .about-page .about__img {
     display: none;
   }
 }
@@ -910,20 +971,20 @@ html {
   }
 }
 .works .sub-works__title {
-  font-size: 40px;
+  font-size: 70px;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
   margin-bottom: 80px;
   text-align: center;
 }
 @media (max-width: 768px) {
   .works .sub-works__title {
-    font-size: 40px;
+    font-size: 24px;
     margin-bottom: 40px;
-    font-weight: 300;
+    letter-spacing: 0px;
   }
 }
 .works .sub-works .sub-works-menu {
@@ -993,6 +1054,12 @@ html {
   color: #1A1919;
   margin-top: 24px;
 }
+@media (max-width: 768px) {
+  .works .sub-works .works-item__title {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
 .works .sub-works .works-item:hover::after {
   width: 100%;
   height: 100%;
@@ -1006,6 +1073,7 @@ html {
 .contact-page {
   width: 100%;
   font-family: "Raleway", sans-serif;
+  background-color: #fbfbfb;
   /*背景が縮むアニメーション*/
 }
 .contact-page::after {
@@ -1048,45 +1116,51 @@ html {
 .contact-page .contact-form .contact-wrap {
   max-width: 900px;
   margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3.4vw 0 2.8vw 0;
+  border-radius: 20px;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form .contact-wrap {
     width: 100%;
-    padding: 20px 5vw 0;
+    padding: 20px 5vw;
   }
 }
 .contact-page .contact-form__title {
-  font-size: 60px;
+  font-size: 70px;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   letter-spacing: 0.3rem;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
   text-align: center;
+  color: #000;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form__title {
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
   }
 }
 .contact-page .contact-form__text {
-  padding: 0 20vw;
-  font-size: 15px;
-  letter-spacing: 1.4px;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  text-align: justify;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 2.4;
+  margin-bottom: 50px;
+  text-align: center;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form__text {
-    font-size: 12px;
-    padding: 0 5vw;
+    font-size: 11px;
     margin-bottom: 20px;
+    line-height: 2.4;
   }
 }
 .contact-page .contact-form .wpcf7 {
@@ -1098,19 +1172,25 @@ html {
     width: 90%;
   }
 }
-.contact-page .contact-form .wpcf7 .wpcf7-form:last-child {
-  margin-bottom: 0;
-}
-.contact-page .contact-form .wpcf7 p {
+.contact-page .contact-form .wpcf7 .form-input {
+  display: flex;
+  gap: 40px;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .contact-page .contact-form .wpcf7 .form-input {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}
 .contact-page .contact-form .wpcf7 label {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #333333;
+  color: #000000;
   font-weight: normal;
   margin-bottom: 20px;
 }
@@ -1121,9 +1201,14 @@ html {
 }
 .contact-page .contact-form .wpcf7 input {
   width: 100%;
-  background-color: #f5f5f5;
-  padding: 16px 20px;
+  border-bottom: 1px solid #000000;
+  padding: 16px 0px;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-form .wpcf7 input {
+    padding: 12px 0px;
+  }
 }
 .contact-page .contact-form .wpcf7 input[type=text] {
   font-size: 16px;
@@ -1131,8 +1216,7 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #1A1919;
-  font-weight: 500;
+  color: #000000;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form .wpcf7 input[type=text] {
@@ -1145,21 +1229,23 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #1A1919;
-  font-weight: 500;
+  color: #000000;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form .wpcf7 input[type=email] {
     font-size: 14px;
   }
 }
+.contact-page .contact-form .wpcf7 .form-message {
+  margin-bottom: 40px;
+}
 .contact-page .contact-form .wpcf7 textarea {
   width: 100%;
-  background-color: #f5f5f5;
-  padding: 16px 20px;
-  font-family: "Noto Sans JP", sans-serif;
+  padding: 16px 0px;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  border-bottom: 1px solid #000000;
   font-size: 16px;
   letter-spacing: 1px;
   box-sizing: border-box;
@@ -1195,13 +1281,13 @@ html {
   display: block;
   width: 300px;
   margin: 0 auto;
-  background-color: #3d5ac0;
   background-color: #1A1919;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 1px;
   transition: 0.3s;
+  border-radius: 20px;
 }
 @media (max-width: 768px) {
   .contact-page .contact-form .wpcf7 .wpcf7-submit {
@@ -1225,30 +1311,9 @@ html {
   letter-spacing: 1.6px;
   text-align: center;
 }
-.contact-page .contact-form .wpcf7 .button-mask {
-  filter: brightness(0.3);
-  transition: 0.5s ease-in-out;
-}
-.contact-page .contact-form .wpcf7 .redtext {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 12px;
-  margin-left: 6px;
-  padding: 0 4px;
-  color: #FF3E0E;
-  font-weight: normal;
-}
 .contact-page .contact-form .wpcf7 .wpcf7-list-item-label {
   font-weight: normal;
   font-size: 14px;
-}
-.contact-page .contact-form .wpcf7 .policy {
-  width: auto;
-  border: 1px solid #1A1919;
-  padding: 8px 8px 6px 8px;
-  cursor: pointer;
-  margin: 0 20px 0 0;
 }
 
 .post-page {
@@ -1323,6 +1388,7 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 2rem;
+  line-height: 1.8;
   letter-spacing: 1px;
   font-weight: 500;
   flex: 1;
@@ -1332,6 +1398,7 @@ html {
   .post-page .detail__title {
     font-size: 1.6rem;
     margin-bottom: 10px;
+    line-height: 1.6;
   }
 }
 .post-page .detail__text {
@@ -1340,11 +1407,16 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: justify;
   color: #333333;
+}
+@media (max-width: 768px) {
+  .post-page .detail__text {
+    font-size: 1.2rem;
+  }
 }
 .post-page .detail__text--en {
   font-family: "Raleway", sans-serif;
@@ -1352,6 +1424,7 @@ html {
   font-style: normal;
   font-weight: 500;
   font-size: 1.8rem;
+  line-height: 1.8;
   letter-spacing: 1px;
   text-align: justify;
   flex: 5;
@@ -1360,7 +1433,6 @@ html {
 @media (max-width: 768px) {
   .post-page .detail__text--en {
     font-size: 1.4rem;
-    line-height: 1.6;
   }
 }
 .post-page .detail__text--url {
@@ -1369,6 +1441,7 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
+  line-height: 1.8;
   letter-spacing: 1px;
   text-align: justify;
   flex: 5;
@@ -1381,8 +1454,8 @@ html {
   }
 }
 @media (max-width: 768px) {
-  .post-page .detail__text {
-    font-size: 1.2rem;
+  .post-page .detail .text-outline {
+    line-height: 2.4;
   }
 }
 .post-page__text {

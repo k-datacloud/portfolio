@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="circle">backtotop</div>
+    <!-- <div class="circle">backtotop</div> -->
     <div class="footer-inner">
         <h2 class="footer__title"></h2>
         <ul class="footer-list footer-menu">

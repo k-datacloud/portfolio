@@ -16,7 +16,7 @@
                 <div class="detail-item">
                     <h3 class="detail__title">OUTLINE</h3>
                     <?php $outline = get_post_meta(get_the_ID(), 'Outline', true); ?>
-                    <p class="detail__text"><?php echo $outline; ?></p>
+                    <p class="detail__text text-outline"><?php echo $outline; ?></p>
                 </div>
                 <div class="detail-item">
                     <h3 class="detail__title">Role</h3>

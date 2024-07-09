@@ -9,68 +9,83 @@
 
     <?php get_template_part('component/header-nav'); ?>
 
-    <section class="sub-about">
-        <!-- <h2 class="sub-about__title">About</h2>
-        <div class="sub-about-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="">
-        </div> -->
-        <!-- <div class="about-wrap">
+    <section class="about-mv">
+        <h2 class="about-mv__title">About me</h2>
+        <p class="about-mv__text">私について
+            <img class="arrow-img" width="70"
+                src="<?php echo get_template_directory_uri(); ?>/img/down-arrow-svgrepo-com.svg" alt="">
+        </p>
+    </section>
+
+    <div class="space"></div>
+
+    <section class="about">
+        <div class="resume">
+            <p class="resume__text">履歴書？
+                <span class="resume__text--en">Resume</span>
+            </p>
+        </div>
+        <div class="about-inner">
             <div class="profile">
-                <h3 class="profile__title">Profile</h3>
-                <table class="profile-table">
-                    <tr>
-                        <th class="profile-table__title">Name</th>
-                        <td class="profile-table__text">Sadatoki Kaisei</td>
-                    </tr>
-                    <tr>
-                        <th class="profile-table__title">Age</th>
-                        <td class="profile-table__text--age">21</td>
-                    </tr>
-                    <tr>
-                        <th class="profile-table__title">Place</th>
-                        <td class="profile-table__text">Hyogo, Japan</td>
-                    </tr>
-                </table>
-            </div>
-        </div> -->
-        <div class="sub-about-inner">
-            <div class="profile">
-                <div class="about-wrap">
-                    <h3 class="profile__title">Career</h3>
-                    <p class="profile__text">
-                        My name is Sadatoki Kaisei. I was born in 2002 and live in Hyogo prefecture in Japan. I have
-                        experienced many things since graduating from high school. My motto is "to live happily in the
-                        moment". Inspired by a college student who was transmitting his programming studies on his blog,
-                        I began to study on my own. I believe that my self-study has given me the ability to run and
-                        research on my own. In the future, I would like to hone my skills as an engineer. Although it is
-                        a big
-                        hope, I am also interested in living and working abroad.
+                <h3 class="profile__title">Background</h3>
+                <div class="profile__text">
+                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校卒業後はリゾートバイトなど様々なことを経験。
+                        趣味はNBA（バスケットボール）を見ることと、なんとなく興味を持って始めてから今も継続している英語です。健康第一。
                     </p>
-                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。
-                        高校卒業後はリゾートバイトなどさまざまな経験を積みました。大学生が発信していたブログに触発され、独学でプログラミングの勉強をスタート。主にWebサイトの構築やフロントエンド開発に取り組みました。
-                        今は英語にちょっとハマっていて特に明確な理由はないけど勉強中。自分のペースで楽しみながら少しずつ取り組んでいます。「心が豊かで生きること」がモットーです。
+                    <p class="profile__text--en">
+                        I was born in 2002 and raised in Hyogo, Japan. I have
+                        experienced many things since graduating from high school.
+                        My hobby is to watch a game of basketball. also I have been learning English since I was
+                        intersted in
+                        it which is somehow interesting. Health is the most important things for life.
                     </p>
                 </div>
             </div>
-            <div class="skills">
-                <h2 class="skills-title" id="skills">Development</h2>
-                <h3 class="skills__title">Frontend</h3>
-                <p class="skills__text">
-                    開発経験がある言語はHTML、CSS、JavaScript。主にウェブサイトやWebアプリでの実装経験あり。HTMLやCSSは基本的なコードであれば調べなくても記述可能できます。CSSはSassを用いた記述やBEMなどの命名規則に準じた記述も可能。JSに関しては調べながらであれば開発やコードの記述も可能。
-                    フレームワークはVueを使った経験があり、VueとVuetifyを用いたWebアプリケーションの開発経験あり。
-                </p>
-                <h3 class="skills__title">Backend</h3>
-                <p class="skills__text">
-                    WordPressを使用したウェブサイトの開発や、PythonのDjangoを使用したアプリの開発経験があります。WordPressはオリジナルテーマでの開発経験あり。Pythonは開発歴は一番浅いですが、とても書きやすく面白くて好きです。
-                </p>
-                <ul class="skills-menu">
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--float" src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
-                    <li class="skills__item"><img class="skills__img--reverse" src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
-                </ul>
+            <div class="profile">
+                <h3 class="profile__title">Experience</h3>
+                <div class="profile__text">
+                    <p class="profile__text--ja">
+                        始めはHTMLやCSSを使ったWebサイトの構築から始めました。その後JavaScriptを書いたりWordPress構築、また興味本位で簡単な
+                        Webアプリ作成なども取り組みました。個人で仕事を受注させていただいた経験もいくつかあります。
+                    </p>
+                    <p class="profile__text--en">
+                        I started to built Website using HTML and CSS. afterwards, I coded in JavaScript builted
+                        WordPress. also I also explored creating simple web applications out of personal interest.
+                        Additionally, I have some experience
+                        working independently and took on several projects."
+                    </p>
+                </div>
+
             </div>
+            <div class="profile">
+                <h3 class="profile__title">Others</h3>
+                <div class="profile__text">
+                    <p class="profile__text--ja">
+                        実は絶対にエンジニアになりたい！とは思っていません。出来心ではじめて隙間時間に作業するうちに出来ることが増えたので続けただけです。上に書いた英語も面白そうだから始めたらなんとなく今も続いているだけです。なりたいものは現状特にありませんが、見つけるためにも色んなことを経験したいと思っています。
+                    </p>
+                    <p class="profile__text--en">Actually, I don't think I definitely want to be an software engineer. I
+                        just have continued because I started for my interests. while I was doing it in my spare time,
+                        things I could do were increasing. English is as well. At present, I don't have a specific
+                        career goal in mind; instead, I want to gain diverse experiences to explore what I really want
+                        to do."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <ul class="skills-menu">
+                <li class="skills__item"><img class="skills__img--reverse"
+                        src="<?php echo get_template_directory_uri(); ?>/img/language-html5.svg" alt="ロゴ"></li>
+                <li class="skills__item"><img class="skills__img--float"
+                        src="<?php echo get_template_directory_uri(); ?>/img/wordpress.svg" alt="ロゴ"></li>
+                <li class="skills__item"><img class="skills__img--reverse"
+                        src="<?php echo get_template_directory_uri(); ?>/img/language-javascript.svg" alt="ロゴ"></li>
+                <li class="skills__item"><img class="skills__img--float"
+                        src="<?php echo get_template_directory_uri(); ?>/img/vuejs.svg" alt="ロゴ"></li>
+                <li class="skills__item"><img class="skills__img--reverse"
+                        src="<?php echo get_template_directory_uri(); ?>/img/python-svgrepo-com.svg" alt="ロゴ"></li>
+            </ul>
+        </div>
         </div>
     </section>
 
