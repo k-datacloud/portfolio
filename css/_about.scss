@@ -145,7 +145,6 @@ html {
             &__text {
                 @include functions.notosans;
                 writing-mode: vertical-lr;
-                letter-spacing: 3px;
                 font-size: 28px;
                 font-weight: 700;
                 color: #000000;
@@ -154,7 +153,7 @@ html {
                 &--en {
                     color: #717171;
                     @include functions.raleway;
-                    font-size: 24px;
+                    font-size: 28px;
                     font-weight: 600;
                     display: block;
                 }
@@ -163,10 +162,12 @@ html {
 
         .about-inner {
             width: 100%;
-            padding: 4vw 20vw;
+            padding: 0vw 20vw;
+            margin-top: -4vw;
 
             @include functions.respond-to(tb) {
                 padding: 7vw 5vw;
+                margin-top: 0;
             }
         }
 

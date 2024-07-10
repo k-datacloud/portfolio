@@ -668,7 +668,6 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   writing-mode: vertical-lr;
-  letter-spacing: 3px;
   font-size: 28px;
   font-weight: 700;
   color: #000000;
@@ -679,17 +678,19 @@ html {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   display: block;
 }
 .about-page .about .about-inner {
   width: 100%;
-  padding: 4vw 20vw;
+  padding: 0vw 20vw;
+  margin-top: -4vw;
 }
 @media (max-width: 1024px) {
   .about-page .about .about-inner {
     padding: 7vw 5vw;
+    margin-top: 0;
   }
 }
 .about-page .about .profile {
