@@ -21,8 +21,8 @@
 
     <section class="about">
         <div class="resume">
-            <p class="resume__text">履歴書？
-                <span class="resume__text--en">Resume</span>
+            <p class="resume__text">
+                <span class="resume__text--en">Overview</span>
             </p>
         </div>
         <div class="about-inner">
@@ -64,7 +64,7 @@
                         実は絶対にエンジニアになりたい！とは思っていません。出来心ではじめて隙間時間に作業するうちに出来ることが増えたので続けただけです。上に書いた英語も面白そうだから始めたらなんとなく今も続いているだけです。なりたいものは現状特にありませんが、見つけるためにも色んなことを経験したいと思っています。
                     </p>
                     <p class="profile__text--en">Actually, I don't think I definitely want to be an software engineer. I
-                        just have continued because I started for my interests. while I was doing it in my spare time,
+                        just have continued because I started for my interests. As I did it in my spare time,
                         things I could do were increasing. English is as well. At present, I don't have a specific
                         career goal in mind; instead, I want to gain diverse experiences to explore what I really want
                         to do."

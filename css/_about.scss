@@ -166,7 +166,7 @@ html {
             padding: 4vw 20vw;
 
             @include functions.respond-to(tb) {
-                padding: 0 5vw;
+                padding: 7vw 5vw;
             }
         }
 
