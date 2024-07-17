@@ -27,7 +27,7 @@
         </div>
         <div class="about-inner">
             <div class="profile">
-                <h3 class="profile__title">Background</h3>
+                <h3 class="profile__title">Who I am</h3>
                 <div class="profile__text">
                     <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校卒業後はリゾートバイトなど様々なことを経験。
                         趣味はNBA（バスケットボール）を見ることと、なんとなく興味を持って始めてから今も継続している英語です。健康第一。
