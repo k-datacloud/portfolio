@@ -52,7 +52,7 @@
                         I started to built Website using HTML and CSS. afterwards, I coded in JavaScript builted
                         WordPress. also I also explored creating simple web applications out of personal interest.
                         Additionally, I have some experience
-                        working independently and took on several projects."
+                        working independently and took on several projects.
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@
                         just have continued because I started for my interests. As I did it in my spare time,
                         things I could do were increasing. English is as well. At present, I don't have a specific
                         career goal in mind; instead, I want to gain diverse experiences to explore what I really want
-                        to do."
+                        to do.
                     </p>
                 </div>
             </div>
