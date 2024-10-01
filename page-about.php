@@ -29,8 +29,8 @@
             <div class="profile">
                 <h3 class="profile__title">Who I am</h3>
                 <div class="profile__text">
-                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校を卒業したあとはリゾートバイトをやったり色んな事をしてました。
-                        趣味はNBA（バスケットボール）を見ることと、なんとなく興味を持って始めてから今も継続している英語です。健康第一。
+                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校を卒業したあとはリゾートバイトなど色んな事をしてました。
+                        趣味はNBA（バスケットボール）を見ること、なんとなく興味を持って始めてから今も継続している英語です。健康第一。
                     </p>
                     <p class="profile__text--en">
                         I was born in 2002 and raised in Hyogo, Japan. I have
@@ -45,8 +45,7 @@
                 <h3 class="profile__title">Experience</h3>
                 <div class="profile__text">
                     <p class="profile__text--ja">
-                        HTMLやCSSを使ったWebサイトの構築から始めてそのあとJavaScriptを書いたりWordPressのサイトを構築、また興味本位で簡単な
-                        Webアプリ作成なども取り組みました。個人で仕事を受注させていただいた経験もいくつかあります。
+                        HTMLやCSSを使ったWebサイトの構築から始め、JavaScriptを使ったプログラミングやWordPressサイトの制作にも取り組みました。その後、興味本位で簡単なWebアプリの作成も行いました。個人でいくつかの仕事を受注した経験もあります。
                     </p>
                     <p class="profile__text--en">
                         I started to built Website using HTML and CSS. afterwards, I coded in JavaScript builted
