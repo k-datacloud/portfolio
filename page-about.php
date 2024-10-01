@@ -29,7 +29,7 @@
             <div class="profile">
                 <h3 class="profile__title">Who I am</h3>
                 <div class="profile__text">
-                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校卒業後はリゾートバイトなど様々なことを経験。
+                    <p class="profile__text--ja">兵庫県在住の21歳、2002年生まれ。高校を卒業したあとはリゾートバイトをやったり色んな事をしてました。
                         趣味はNBA（バスケットボール）を見ることと、なんとなく興味を持って始めてから今も継続している英語です。健康第一。
                     </p>
                     <p class="profile__text--en">
@@ -45,7 +45,7 @@
                 <h3 class="profile__title">Experience</h3>
                 <div class="profile__text">
                     <p class="profile__text--ja">
-                        始めはHTMLやCSSを使ったWebサイトの構築から始めました。その後JavaScriptを書いたりWordPress構築、また興味本位で簡単な
+                        HTMLやCSSを使ったWebサイトの構築から始めてそのあとJavaScriptを書いたりWordPressのサイトを構築、また興味本位で簡単な
                         Webアプリ作成なども取り組みました。個人で仕事を受注させていただいた経験もいくつかあります。
                     </p>
                     <p class="profile__text--en">
@@ -61,7 +61,7 @@
                 <h3 class="profile__title">Others</h3>
                 <div class="profile__text">
                     <p class="profile__text--ja">
-                        実は絶対にエンジニアになりたい！とは思っていません。出来心ではじめて隙間時間に作業するうちに出来ることが増えたので続けただけです。上に書いた英語も面白そうだから始めたらなんとなく今も続いているだけです。なりたいものは現状特にありませんが、見つけるためにも色んなことを経験したいと思っています。
+                        実は絶対にエンジニアになりたい！とは思っていません。出来心ではじめて隙間時間に作業するうちに出来ることが増えたので続けただけです。上に書いた英語も面白そうだから始めて今も続いているだけです。特定の夢や目標は現状特にありませんが、見つけるためにも色んなことを経験したいと思っています。
                     </p>
                     <p class="profile__text--en">Actually, I don't think I definitely want to be an software engineer. I
                         just have continued because I started for my interests. As I did it in my spare time,
